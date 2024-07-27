@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsjiiq2p10pof"]
+
+[ext_resource type="Texture2D" uid="uid://ttev25bb0r64" path="res://guns/armas_spritesheet.png" id="1_1n1qf"]
+[ext_resource type="Script" path="res://scripts/weapon_template.gd" id="1_t5we8"]
+
+[node name="Weapon_TEmplate" type="Node2D"]
+script = ExtResource("1_t5we8")
+
+[node name="Weapon_Texture" type="Sprite2D" parent="."]
+texture = ExtResource("1_1n1qf")
+region_enabled = true
+
+[node name="arm_1" type="Sprite2D" parent="."]
+region_enabled = true
+
+[node name="arm_2" type="Sprite2D" parent="."]
+region_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Attack_Area" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="Detection_Area" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="AttackTimer" type="Timer" parent="."]
+one_shot = true

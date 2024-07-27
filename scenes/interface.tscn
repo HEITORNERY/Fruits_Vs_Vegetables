@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4psrm47wqwgk"]
+
+[ext_resource type="FontFile" uid="uid://bw7i65hi8ws7f" path="res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf" id="1_4ttkv"]
+[ext_resource type="Script" path="res://scripts/interface.gd" id="1_scmrk"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nlx1o"]
+font = ExtResource("1_4ttkv")
+
+[node name="Interface" type="CanvasLayer" node_paths=PackedStringArray("wave_and_time")]
+script = ExtResource("1_scmrk")
+wave_and_time = NodePath("Wave_And_Time")
+
+[node name="Wave_And_Time" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+label_settings = SubResource("LabelSettings_nlx1o")
+horizontal_alignment = 1
+vertical_alignment = 1

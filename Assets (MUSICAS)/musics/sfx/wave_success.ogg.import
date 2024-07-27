@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bo3kc2d5txa4u"
+path="res://.godot/imported/wave_success.ogg-f40f449a442f3422a98a2f39ecb985ac.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets (MUSICAS)/musics/sfx/wave_success.ogg"
+dest_files=["res://.godot/imported/wave_success.ogg-f40f449a442f3422a98a2f39ecb985ac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b00mbah1xhq83"
+path="res://.godot/imported/gold_1.ogg-f9bd81c5b1b45ab3d9af5defec546504.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets (MUSICAS)/musics/sfx/gold_1.ogg"
+dest_files=["res://.godot/imported/gold_1.ogg-f9bd81c5b1b45ab3d9af5defec546504.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

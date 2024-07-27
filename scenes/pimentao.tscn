@@ -1,0 +1,159 @@
+[gd_scene load_steps=23 format=3 uid="uid://bwbw8jwa75ye1"]
+
+[ext_resource type="PackedScene" uid="uid://b3jycsrfrj4a" path="res://scenes/enemy_template.tscn" id="1_do0l7"]
+[ext_resource type="Texture2D" uid="uid://ppl33rfsdpoc" path="res://enemy/pimentao_walk_costas.png" id="2_exmcd"]
+[ext_resource type="Texture2D" uid="uid://b3fnrbtmacuer" path="res://enemy/pimentao_walk_frente.png" id="3_30yta"]
+[ext_resource type="Texture2D" uid="uid://uuitrr3cggo7" path="res://enemy/pimentao_walk_lado.png" id="4_f5wxa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k51q5"]
+atlas = ExtResource("2_exmcd")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bg7fy"]
+atlas = ExtResource("2_exmcd")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17c6h"]
+atlas = ExtResource("2_exmcd")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yygyl"]
+atlas = ExtResource("2_exmcd")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qg5g4"]
+atlas = ExtResource("2_exmcd")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nmcr"]
+atlas = ExtResource("3_30yta")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljx5j"]
+atlas = ExtResource("3_30yta")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d32uq"]
+atlas = ExtResource("3_30yta")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5uju"]
+atlas = ExtResource("3_30yta")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hcyl0"]
+atlas = ExtResource("3_30yta")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sr6bu"]
+atlas = ExtResource("4_f5wxa")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qry3s"]
+atlas = ExtResource("4_f5wxa")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4qvi0"]
+atlas = ExtResource("4_f5wxa")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqee7"]
+atlas = ExtResource("4_f5wxa")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j3t1"]
+atlas = ExtResource("4_f5wxa")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ob6al"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k51q5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bg7fy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17c6h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yygyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qg5g4")
+}],
+"loop": false,
+"name": &"walk_costas",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nmcr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljx5j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d32uq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i5uju")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hcyl0")
+}],
+"loop": false,
+"name": &"walk_frente",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sr6bu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qry3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4qvi0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dqee7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j3t1")
+}],
+"loop": false,
+"name": &"walk_lado",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abc2g"]
+size = Vector2(44, 45)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iuojs"]
+size = Vector2(49, 49)
+
+[node name="PImentao" instance=ExtResource("1_do0l7")]
+_enemy_type = "persegue_mais_rapido"
+speed = 165.0
+_damage = 2
+health = 9
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_ob6al")
+animation = &"walk_lado"
+frame = 4
+frame_progress = 1.0
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = false
+position = Vector2(5, 12.5)
+shape = SubResource("RectangleShape2D_abc2g")
+
+[node name="RangeArea" parent="." index="2"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxArea" index="1"]
+position = Vector2(1.5, 14.5)
+shape = SubResource("RectangleShape2D_iuojs")
