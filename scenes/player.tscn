@@ -1,4 +1,4 @@
-[gd_scene load_steps=80 format=3 uid="uid://d0hh8uap436bb"]
+[gd_scene load_steps=83 format=3 uid="uid://d0hh8uap436bb"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_q0jsm"]
 [ext_resource type="Texture2D" uid="uid://d3mep17nnjb6o" path="res://player/orange_idle_back.png" id="2_r4d88"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://d1uppvnag63ij" path="res://buttons/ui_buttons_arrow_down_PRESSED-export.png" id="14_7rnft"]
 [ext_resource type="Script" path="res://scripts/Camera.gd" id="16_bge3p"]
 [ext_resource type="PackedScene" uid="uid://vseicwmd8bp7" path="res://scenes/big_sword.tscn" id="16_jb8vv"]
+[ext_resource type="PackedScene" uid="uid://cpc0yro4olabl" path="res://scenes/hammer.tscn" id="18_3edj8"]
+[ext_resource type="PackedScene" uid="uid://cwkkewybvvxt8" path="res://scenes/bow.tscn" id="18_wty1f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1e2y"]
 atlas = ExtResource("2_r4d88")
@@ -396,7 +398,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(64, 0), Vector2(40, 0)]
+"values": [Vector2(96, 0), Vector2(64, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -458,7 +460,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(32, 64), Vector2(10, 64)]
+"values": [Vector2(48, 106), Vector2(32, 84)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -517,10 +519,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 2.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(-32, -64), Vector2(-10, -64)]
+"values": [Vector2(-53, -83), Vector2(-48, -64), Vector2(-40, -79)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -541,13 +543,65 @@ _data = {
 "move": SubResource("Animation_7pl7n")
 }
 
+[sub_resource type="Animation" id="Animation_mu6of"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-46, 79)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_s2bq7"]
 resource_name = "move"
 length = 5.0
 loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-64, 106), Vector2(-40, 96)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.4, 1.4), Vector2(1, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uju80"]
 _data = {
+"RESET": SubResource("Animation_mu6of"),
 "move": SubResource("Animation_s2bq7")
 }
 
@@ -592,7 +646,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-64, 0), Vector2(-40, 0)]
+"values": [Vector2(-90, 0), Vector2(-76, 0)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -654,7 +708,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 2.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(32, -64), Vector2(10, -64)]
+"values": [Vector2(86, -86), Vector2(70, -70)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -739,13 +793,13 @@ script = ExtResource("16_bge3p")
 [node name="arma1" type="Marker2D" parent="WEapons"]
 position = Vector2(64, 0)
 
-[node name="Big_Sword" parent="WEapons/arma1" instance=ExtResource("16_jb8vv")]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WEapons/arma1"]
 libraries = {
 "": SubResource("AnimationLibrary_vcjru")
 }
 autoplay = "move"
+
+[node name="Big_Sword" parent="WEapons/arma1" instance=ExtResource("16_jb8vv")]
 
 [node name="arma2" type="Marker2D" parent="WEapons"]
 position = Vector2(32, 64)
@@ -755,6 +809,8 @@ libraries = {
 "": SubResource("AnimationLibrary_vuhk5")
 }
 autoplay = "move"
+
+[node name="Bow" parent="WEapons/arma2" instance=ExtResource("18_wty1f")]
 
 [node name="arma3" type="Marker2D" parent="WEapons"]
 position = Vector2(-32, -64)
@@ -766,7 +822,7 @@ libraries = {
 autoplay = "move"
 
 [node name="arma4" type="Marker2D" parent="WEapons"]
-position = Vector2(-32, 64)
+position = Vector2(-46, 79)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WEapons/arma4"]
 libraries = {
@@ -777,13 +833,13 @@ autoplay = "move"
 [node name="arma5" type="Marker2D" parent="WEapons"]
 position = Vector2(-64, 0)
 
-[node name="Big_Sword" parent="WEapons/arma5" instance=ExtResource("16_jb8vv")]
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WEapons/arma5"]
 libraries = {
 "": SubResource("AnimationLibrary_272xa")
 }
 autoplay = "move"
+
+[node name="Big_Sword" parent="WEapons/arma5" instance=ExtResource("16_jb8vv")]
 
 [node name="arma6" type="Marker2D" parent="WEapons"]
 position = Vector2(32, -64)
@@ -793,3 +849,5 @@ libraries = {
 "": SubResource("AnimationLibrary_ox22l")
 }
 autoplay = "move"
+
+[node name="Hammer" parent="WEapons/arma6" instance=ExtResource("18_3edj8")]

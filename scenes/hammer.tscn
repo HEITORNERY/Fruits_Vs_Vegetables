@@ -1,0 +1,116 @@
+[gd_scene load_steps=9 format=3 uid="uid://cpc0yro4olabl"]
+
+[ext_resource type="Script" path="res://scripts/hammer.gd" id="1_aqnk0"]
+[ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_imi58"]
+[ext_resource type="Texture2D" uid="uid://cqxd7268pwsk2" path="res://guns/hammer.png" id="2_vgpik"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wos45"]
+radius = 56.1427
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64ljm"]
+size = Vector2(62.9691, 29.9855)
+
+[sub_resource type="Animation" id="Animation_5i0r1"]
+resource_name = "attack"
+length = 0.25
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AttackArea/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [true, false, true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.610865, 3.14159, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ilmqs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AttackArea/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fd6ol"]
+_data = {
+"RESET": SubResource("Animation_ilmqs"),
+"attack": SubResource("Animation_5i0r1")
+}
+
+[node name="Hammer" type="Node2D"]
+script = ExtResource("1_aqnk0")
+tempo_de_recarga_do_ataque = 0.6
+attack_damage = 7
+
+[node name="Weapon_Template" type="Sprite2D" parent="."]
+texture = ExtResource("2_vgpik")
+
+[node name="Mao_1" type="Sprite2D" parent="."]
+position = Vector2(0, 44)
+texture = ExtResource("2_imi58")
+
+[node name="Mao_2" type="Sprite2D" parent="."]
+texture = ExtResource("2_imi58")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource("CircleShape2D_wos45")
+
+[node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(-0.0116932, -33.0041)
+shape = SubResource("RectangleShape2D_64ljm")
+disabled = true
+
+[node name="AttackTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fd6ol")
+}
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

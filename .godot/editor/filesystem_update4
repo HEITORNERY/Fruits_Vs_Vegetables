@@ -1,0 +1,14 @@
+res://scenes/bow.tscn
+res://scripts/Bow.gd
+res://scenes/player.tscn
+res://scenes/big_sword.tscn
+res://scenes/hammer.tscn
+res://scenes/abobora.tscn
+res://scenes/enemy_pepino.tscn
+res://scenes/game_level.tscn
+res://scenes/pimentao.tscn
+res://scenes/popup.tscn
+res://scenes/weapon_template.tscn
+res://scripts/hammer.gd
+res://scenes/arrow.tscn
+res://scripts/arrow.gd

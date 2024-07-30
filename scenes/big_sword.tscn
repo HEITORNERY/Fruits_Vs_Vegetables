@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://vseicwmd8bp7"]
+[gd_scene load_steps=9 format=3 uid="uid://vseicwmd8bp7"]
 
 [ext_resource type="PackedScene" uid="uid://dsjiiq2p10pof" path="res://scenes/weapon_template.tscn" id="1_l7w73"]
 [ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_20fxq"]
+[ext_resource type="Texture2D" uid="uid://nivitqclgdmo" path="res://guns/big_sword.png" id="2_gdxw0"]
 
 [sub_resource type="Animation" id="Animation_8iuvh"]
 length = 0.001
@@ -69,18 +70,20 @@ _data = {
 size = Vector2(8, 17)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3mf6n"]
-radius = 27.2947
+radius = 113.864
 
 [node name="Big_Sword" instance=ExtResource("1_l7w73")]
 tempo_de_recarga_do_ataque = 0.6
 attack_damage = 3
 
 [node name="Weapon_Texture" parent="." index="0"]
+texture = ExtResource("2_gdxw0")
 offset = Vector2(0, -14)
-region_rect = Rect2(302.703, 50.4869, 14.5941, 27.8369)
+region_enabled = false
+region_rect = Rect2(125.548, 53.3233, 35.5393, 29.4585)
 
 [node name="arm_1" parent="." index="1"]
-position = Vector2(-7.10543e-15, 16)
+position = Vector2(-1.90735e-06, 16)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("2_20fxq")
 offset = Vector2(0, -36)
@@ -92,7 +95,7 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Attack_Area" index="0"]
-position = Vector2(0, -17.5)
+position = Vector2(0, -15.5)
 shape = SubResource("RectangleShape2D_itjr0")
 disabled = true
 
