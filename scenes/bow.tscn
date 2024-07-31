@@ -82,7 +82,7 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_yalak"]
 radius = 192.0
 
-[node name="Bow" type="Node2D"]
+[node name="Bow" type="Node2D" groups=["bow"]]
 script = ExtResource("1_oh2q3")
 tempo_de_recarga_do_ataque = 0.3
 attack_damage = 5

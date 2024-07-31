@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722316051
+::res://::1722369541
 icon.svg::CompressedTexture2D::2202581799061448628::1722016077::1722112188::1::::<><>::
 ::res://Assets (Fonte)/::1721919570
 License.txt::TextFile::-1::1715866238::0::1::::<><>::
@@ -79,26 +79,29 @@ orange_idle_of_side.png::CompressedTexture2D::1218977624611107234::1721962569::1
 orange_walk_frente.png::CompressedTexture2D::1019231442465304449::1721962640::1722112188::1::::<><>::
 orange_walk_lado.png::CompressedTexture2D::5903913293872374208::1721962751::1722112188::1::::<><>::
 orange_walk_trás.png::CompressedTexture2D::3241290331167612531::1721962801::1722112188::1::::<><>::
-::res://scenes/::1722315991
-abobora.tscn::PackedScene::4881681297756235742::1722315991::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://cl36cqu51d7mp::::res://enemy/abobora_dash.png<>uid://cxajngqcoaiv7::::res://enemy/abobora_walk_costas.png<>uid://be1u1m1pooxu1::::res://enemy/abobora_walk_frente.png<>uid://4xryqmdvw5v6::::res://enemy/abobora_walk_lado.png
-big_sword.tscn::PackedScene::1511381809876991322::1722315991::0::1::::<><>::uid://dsjiiq2p10pof::::res://scenes/weapon_template.tscn<>uid://1i12yh2iau8g::::res://player/mao.png
-bow.tscn::PackedScene::6338255210730156827::1722315991::0::1::::<><>::res://scripts/Bow.gd<>uid://1i12yh2iau8g::::res://player/mao.png<>uid://ttev25bb0r64::::res://guns/armas_spritesheet.png
-enemy_pepino.tscn::PackedScene::7655417865943073467::1722315991::0::1::::<><>::uid://co1ljlqqfj4ux::::res://enemy/pepino_andando_de_costas.png<>uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://bidkhuoypom0d::::res://enemy/pepino_andando_de_frente.png<>uid://stuqwt10ppol::::res://enemy/pepino_andando_de_lado-sheet.png
+::res://scenes/::1722350133
+abobora.tscn::PackedScene::4881681297756235742::1722350133::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://cl36cqu51d7mp::::res://enemy/abobora_dash.png<>uid://cxajngqcoaiv7::::res://enemy/abobora_walk_costas.png<>uid://be1u1m1pooxu1::::res://enemy/abobora_walk_frente.png<>uid://4xryqmdvw5v6::::res://enemy/abobora_walk_lado.png
+arrow.tscn::PackedScene::7879723810561935969::1722350133::0::1::::<><>::res://scripts/arrow.gd<>uid://cu1143svustor::::res://guns/flecha.png
+big_sword.tscn::PackedScene::1511381809876991322::1722350133::0::1::::<><>::uid://dsjiiq2p10pof::::res://scenes/weapon_template.tscn<>uid://1i12yh2iau8g::::res://player/mao.png<>uid://nivitqclgdmo::::res://guns/big_sword.png
+bow.tscn::PackedScene::6338255210730156827::1722350133::0::1::::<><>::res://scripts/Bow.gd<>uid://1i12yh2iau8g::::res://player/mao.png<>uid://ttev25bb0r64::::res://guns/armas_spritesheet.png
+enemy_pepino.tscn::PackedScene::7655417865943073467::1722350133::0::1::::<><>::uid://co1ljlqqfj4ux::::res://enemy/pepino_andando_de_costas.png<>uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://bidkhuoypom0d::::res://enemy/pepino_andando_de_frente.png<>uid://stuqwt10ppol::::res://enemy/pepino_andando_de_lado-sheet.png
 enemy_template.tscn::PackedScene::128580866373265014::1722108257::0::1::::<><>::res://scripts/enemy.gd
-game_level.tscn::PackedScene::5338715867505968681::1722315991::0::1::::<><>::uid://u6xvppqiu8k0::::res://scenes/terrain.tscn<>uid://d0hh8uap436bb::::res://scenes/player.tscn<>res://scripts/wave_manager.gd<>uid://ue45x42eanqf::::res://scenes/wave_spot.tscn<>uid://c4psrm47wqwgk::::res://scenes/interface.tscn
-hammer.tscn::PackedScene::3203628745258468599::1722315991::0::1::::<><>::uid://vseicwmd8bp7::::res://scenes/big_sword.tscn<>uid://1i12yh2iau8g::::res://player/mao.png
+game_level.tscn::PackedScene::5338715867505968681::1722350133::0::1::::<><>::uid://u6xvppqiu8k0::::res://scenes/terrain.tscn<>uid://d0hh8uap436bb::::res://scenes/player.tscn<>res://scripts/wave_manager.gd<>uid://ue45x42eanqf::::res://scenes/wave_spot.tscn<>uid://c4psrm47wqwgk::::res://scenes/interface.tscn
+hammer.tscn::PackedScene::5831364477198669189::1722350133::0::1::::<><>::res://scripts/hammer.gd<>uid://1i12yh2iau8g::::res://player/mao.png<>uid://cqxd7268pwsk2::::res://guns/hammer.png
 interface.tscn::PackedScene::6840407440129734734::1722108257::0::1::::<><>::uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf<>res://scripts/interface.gd
-pimentao.tscn::PackedScene::3934034833263415282::1722315991::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://ppl33rfsdpoc::::res://enemy/pimentao_walk_costas.png<>uid://b3fnrbtmacuer::::res://enemy/pimentao_walk_frente.png<>uid://uuitrr3cggo7::::res://enemy/pimentao_walk_lado.png
-player.tscn::PackedScene::8928918787645182383::1722315991::0::1::::<><>::res://scripts/player.gd<>uid://d3mep17nnjb6o::::res://player/orange_idle_back.png<>uid://rmqnbgp21bfu::::res://player/orange_idle_of_side.png<>uid://cshjsdyotvahu::::res://player/orange_idle-Sheet-sheet.png<>uid://oryufpe4a0pp::::res://player/orange_walk_frente.png<>uid://cqd5ubk5o5721::::res://player/orange_walk_lado.png<>uid://bmgdtwnn8i7f0::::res://player/orange_walk_trás.png<>uid://baynoejjle46m::::res://buttons/ui_buttons_arrow_left_NORMAL.png<>uid://dy6ym43b0qpg4::::res://buttons/ui_buttons_arrow_left_PRESSED.png<>uid://dsvqokw34y8t7::::res://buttons/ui_buttons_arrow_right_NORMAL.png<>uid://bbdxfd4cdadv5::::res://buttons/ui_buttons_arrow_right_PRESSED.png<>uid://diih7uraju7o0::::res://buttons/ui_buttons_arrow_up_NORMAL.png<>uid://l8q63gkki6wt::::res://buttons/ui_buttons_arrow_up_PRESSED.png<>uid://fv4iomnt4ht1::::res://buttons/ui_buttons_arrow_down_NORMAL-export.png<>uid://d1uppvnag63ij::::res://buttons/ui_buttons_arrow_down_PRESSED-export.png<>res://scripts/Camera.gd<>uid://vseicwmd8bp7::::res://scenes/big_sword.tscn<>uid://blv4kd1fpho1d::::res://scenes/hammer.tscn<>uid://cwkkewybvvxt8::::res://scenes/bow.tscn
-popup.tscn::PackedScene::7945219546471997594::1722315991::0::1::::<><>::uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff<>res://scripts/popup.gd
+pimentao.tscn::PackedScene::3934034833263415282::1722350133::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://ppl33rfsdpoc::::res://enemy/pimentao_walk_costas.png<>uid://b3fnrbtmacuer::::res://enemy/pimentao_walk_frente.png<>uid://uuitrr3cggo7::::res://enemy/pimentao_walk_lado.png
+player.tscn::PackedScene::8928918787645182383::1722350133::0::1::::<><>::res://scripts/player.gd<>uid://d3mep17nnjb6o::::res://player/orange_idle_back.png<>uid://rmqnbgp21bfu::::res://player/orange_idle_of_side.png<>uid://cshjsdyotvahu::::res://player/orange_idle-Sheet-sheet.png<>uid://oryufpe4a0pp::::res://player/orange_walk_frente.png<>uid://cqd5ubk5o5721::::res://player/orange_walk_lado.png<>uid://bmgdtwnn8i7f0::::res://player/orange_walk_trás.png<>uid://baynoejjle46m::::res://buttons/ui_buttons_arrow_left_NORMAL.png<>uid://dy6ym43b0qpg4::::res://buttons/ui_buttons_arrow_left_PRESSED.png<>uid://dsvqokw34y8t7::::res://buttons/ui_buttons_arrow_right_NORMAL.png<>uid://bbdxfd4cdadv5::::res://buttons/ui_buttons_arrow_right_PRESSED.png<>uid://diih7uraju7o0::::res://buttons/ui_buttons_arrow_up_NORMAL.png<>uid://l8q63gkki6wt::::res://buttons/ui_buttons_arrow_up_PRESSED.png<>uid://fv4iomnt4ht1::::res://buttons/ui_buttons_arrow_down_NORMAL-export.png<>uid://d1uppvnag63ij::::res://buttons/ui_buttons_arrow_down_PRESSED-export.png<>res://scripts/Camera.gd<>uid://vseicwmd8bp7::::res://scenes/big_sword.tscn<>uid://cpc0yro4olabl::::res://scenes/hammer.tscn<>uid://cwkkewybvvxt8::::res://scenes/bow.tscn
+popup.tscn::PackedScene::7945219546471997594::1722350133::0::1::::<><>::uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff<>res://scripts/popup.gd
 terrain.tscn::PackedScene::1469207387402932689::1721974275::0::1::::<><>::uid://c2bfsqtlry68t::::res://tile/tileset_do_terreno.png
 wave_spot.tscn::PackedScene::1413850004452759865::1722108257::0::1::::<><>::
-weapon_template.tscn::PackedScene::8441741541444392997::1722315991::0::1::::<><>::uid://ttev25bb0r64::::res://guns/armas_spritesheet.png<>res://scripts/weapon_template.gd
-::res://scripts/::1722315956
-Bow.gd::GDScript::-1::1722315956::0::1::::Bow<>Node2D<>::
+weapon_template.tscn::PackedScene::8441741541444392997::1722350133::0::1::::<><>::uid://ttev25bb0r64::::res://guns/armas_spritesheet.png<>res://scripts/weapon_template.gd
+::res://scripts/::1722320294
+arrow.gd::GDScript::-1::1722319738::0::1::::Projectile<>Area2D<>::
+Bow.gd::GDScript::-1::1722320294::0::1::::Bow<>Node2D<>::
 Camera.gd::GDScript::-1::1722050493::0::1::::PlayerCamera<>Camera2D<>::
 enemy.gd::GDScript::-1::1722106306::0::1::::Enemy<>CharacterBody2D<>::
 global.gd::GDScript::-1::1721967434::0::1::::Global<>Node<>::
+hammer.gd::GDScript::-1::1722317781::0::1::::<>Node2D<>::
 interface.gd::GDScript::-1::1722096817::0::1::::Interface<>CanvasLayer<>::
 player.gd::GDScript::-1::1722104144::0::1::::Player<>CharacterBody2D<>::
 popup.gd::GDScript::-1::1722108255::0::1::::PopupText<>Label<>::

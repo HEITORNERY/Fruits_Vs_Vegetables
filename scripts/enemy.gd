@@ -10,6 +10,17 @@ var loading_dash : bool = false
 var is_dashing : bool = false
 var previous_player_position :Vector2
 const popup_scene : PackedScene = preload("res://scenes/popup.tscn")
+var itens : Dictionary = {
+	"coins": {
+		"probabilidade_de_spawn": 0.8,
+		"cena" : preload("res://scenes/coin.tscn")
+	},
+	"diamond": {
+		"probabilidade_de_spawn": 0.2,
+		"cena" : preload("res://scenes/diamond.tscn")
+	}
+		
+}
 func _physics_process(_delta):
 	if loading_dash:
 		return
@@ -98,9 +109,17 @@ func update_health(_value : int) -> void:
 	get_tree().call_group("player_camera", "terremoto", 2.0, 0.25)
 	if health <= 0:
 		get_tree().call_group("player_camera", "terremoto", 5.0, 0.35)
+		spawn_coins()
 		queue_free()
 func spawn_text_popup(value: int) -> void:
 	var popup_damage : PopupText = popup_scene.instantiate()
 	popup_damage.update_text(value)
 	popup_damage.global_position = global_position
 	get_tree().root.call_deferred("add_child", popup_damage)
+func spawn_coins():
+	for coin in itens:
+		var probabilidade : float = randf()
+		if probabilidade <= itens[coin]["probabilidade_de_spawn"]:
+			var coin_scene : ItensDropados = itens[coin]["cena"].instantiate() 
+			get_tree().root.call_deferred("add_child", coin_scene)
+			coin_scene.global_position = global_position

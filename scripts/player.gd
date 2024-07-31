@@ -3,6 +3,7 @@ class_name Player
 const SPEED = 350.0
 @export_category("Variables")
 @export var health = 30
+@export var weapon_manager : Node2D
 var max_health: int 
 func _ready():
 	global.player = self
@@ -45,3 +46,24 @@ func update_health(_type: String, _value: int) -> void:
 				health = max_health
 func reset_health() -> void:
 	health = max_health
+func spawn_weapon(weapon_data: Dictionary):
+	for children in weapon_manager.get_children():
+		if children.get_child_count() == 1:
+			var weapon_scene = load(weapon_data["scene_path"])
+			if not weapon_scene:
+				print("Erro ao carregar a cena da arma:", weapon_data["scene_path"])
+				return
+
+			var weapon = weapon_scene.instantiate()
+			children.call_deferred("add_child", weapon)
+
+			if weapon.has_method("update_damage"):
+				weapon.update_damage(weapon_data["values"]["damage"])
+			else:
+				print("A arma não tem o método 'update_damage'")
+
+			if weapon.has_method("update_attack_timer"):
+				weapon.update_attack_timer(weapon_data["values"]["tempo_de_recarga"])
+			else:
+				print("A arma não tem o método 'update_attack_timer'")
+			break

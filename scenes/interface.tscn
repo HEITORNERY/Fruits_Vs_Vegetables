@@ -1,14 +1,55 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4psrm47wqwgk"]
+[gd_scene load_steps=15 format=3 uid="uid://c4psrm47wqwgk"]
 
 [ext_resource type="FontFile" uid="uid://bw7i65hi8ws7f" path="res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf" id="1_4ttkv"]
 [ext_resource type="Script" path="res://scripts/interface.gd" id="1_scmrk"]
+[ext_resource type="Texture2D" uid="uid://mq8cf7s7vt8i" path="res://icons/moeda.png" id="3_84b5r"]
+[ext_resource type="FontFile" uid="uid://bmyq1cjim3bb6" path="res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff" id="4_onxeu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nlx1o"]
 font = ExtResource("1_4ttkv")
+font_size = 12
+outline_size = 2
+outline_color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+shadow_size = 2
 
-[node name="Interface" type="CanvasLayer" node_paths=PackedStringArray("wave_and_time")]
+[sub_resource type="LabelSettings" id="LabelSettings_ypo1x"]
+font = ExtResource("1_4ttkv")
+font_size = 12
+outline_size = 2
+outline_color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+shadow_size = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_e8ccw"]
+font = ExtResource("1_4ttkv")
+font_size = 12
+outline_size = 2
+outline_color = Color(0.0142752, 0.0142752, 0.0142752, 1)
+shadow_size = 2
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_udu2k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ekwdq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aqcj5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_110cp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nc1n1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cqrky"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_t74he"]
+font = ExtResource("4_onxeu")
+font_size = 24
+outline_size = 2
+outline_color = Color(0.0295066, 0.0295066, 0.0295066, 1)
+shadow_size = 2
+
+[node name="Interface" type="CanvasLayer" node_paths=PackedStringArray("wave_and_time", "slots_container")]
+process_mode = 3
 script = ExtResource("1_scmrk")
 wave_and_time = NodePath("Wave_And_Time")
+slots_container = NodePath("BetweenWaves/Background/HBoxContainer")
 
 [node name="Wave_And_Time" type="Label" parent="."]
 anchors_preset = 5
@@ -21,3 +62,390 @@ grow_horizontal = 2
 label_settings = SubResource("LabelSettings_nlx1o")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="BetweenWaves" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="ColorRect" parent="BetweenWaves"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.462745)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -304.0
+offset_top = -125.0
+offset_right = 304.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 3
+alignment = 1
+
+[node name="SLOT1" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(125, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="SLOT2" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(125, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="SLOT3" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(125, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="SLOT4" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(125, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="SLOT5" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(125, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="Gerar_De_Novo" type="Button" parent="BetweenWaves/Background" groups=["choose_button"]]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -35.0
+offset_right = 96.0
+offset_bottom = -8.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.913725, 0.929412, 0, 1)
+theme_override_colors/font_hover_color = Color(0.473976, 0.473976, 0.473976, 1)
+theme_override_fonts/font = ExtResource("1_4ttkv")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ekwdq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aqcj5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_110cp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nc1n1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cqrky")
+text = "Reroll"
+
+[node name="Pular" type="Button" parent="BetweenWaves/Background" groups=["choose_button"]]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -97.0
+offset_top = -35.0
+offset_right = -9.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.913725, 0.929412, 0, 1)
+theme_override_colors/font_hover_color = Color(0.473976, 0.473976, 0.473976, 1)
+theme_override_fonts/font = ExtResource("1_4ttkv")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ekwdq")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_aqcj5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_110cp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nc1n1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cqrky")
+text = "Pular
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_right = 47.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+texture = ExtResource("3_84b5r")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_t74he")

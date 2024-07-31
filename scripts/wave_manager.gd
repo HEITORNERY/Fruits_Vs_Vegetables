@@ -162,6 +162,7 @@ func clear_map() -> void:
 	for children in get_parent().get_children():
 		if children is Enemy:
 			children.queue_free()
+	interface.load_between_waves(false, true)
 	start_new_wave()
 func start_new_wave() -> void:
 	wave_duration.start(wave_dict[current_wave]["wave_duration"])

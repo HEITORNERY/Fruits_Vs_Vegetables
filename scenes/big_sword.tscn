@@ -72,7 +72,7 @@ size = Vector2(8, 17)
 [sub_resource type="CircleShape2D" id="CircleShape2D_3mf6n"]
 radius = 113.864
 
-[node name="Big_Sword" instance=ExtResource("1_l7w73")]
+[node name="Big_Sword" groups=["big_sword"] instance=ExtResource("1_l7w73")]
 tempo_de_recarga_do_ataque = 0.6
 attack_damage = 3
 

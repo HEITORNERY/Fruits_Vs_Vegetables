@@ -29,4 +29,10 @@ func spawn_projectile() -> void:
 		projectile.attack_damage = attack_damage
 		projectile.direction = direction
 		get_tree().root.call_deferred("add_child", projectile)
-		
+func _physics_process(delta):
+	if is_instance_valid(referencia_ao_inimigo):
+		rotation = global_position.direction_to(referencia_ao_inimigo.global_position).angle()
+func update_damage(value: int):
+	attack_damage = value
+func update_attack_timer(value: float):
+	tempo_de_recarga_do_ataque = value

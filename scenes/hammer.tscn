@@ -10,6 +10,33 @@ radius = 56.1427
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_64ljm"]
 size = Vector2(62.9691, 29.9855)
 
+[sub_resource type="Animation" id="Animation_ilmqs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AttackArea/CollisionShape2D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_5i0r1"]
 resource_name = "attack"
 length = 0.25
@@ -39,43 +66,17 @@ tracks/1/keys = {
 "values": [0.0, -0.610865, 3.14159, 0.0]
 }
 
-[sub_resource type="Animation" id="Animation_ilmqs"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AttackArea/CollisionShape2D:disabled")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_fd6ol"]
 _data = {
 "RESET": SubResource("Animation_ilmqs"),
 "attack": SubResource("Animation_5i0r1")
 }
 
-[node name="Hammer" type="Node2D"]
+[node name="Hammer" type="Node2D" groups=["hammer"]]
+scale = Vector2(0.7, 0.7)
 script = ExtResource("1_aqnk0")
 tempo_de_recarga_do_ataque = 0.6
-attack_damage = 7
+attack_damage = 9
 
 [node name="Weapon_Template" type="Sprite2D" parent="."]
 texture = ExtResource("2_vgpik")

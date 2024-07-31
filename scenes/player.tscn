@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://d0hh8uap436bb"]
+[gd_scene load_steps=81 format=3 uid="uid://d0hh8uap436bb"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_q0jsm"]
 [ext_resource type="Texture2D" uid="uid://d3mep17nnjb6o" path="res://player/orange_idle_back.png" id="2_r4d88"]
@@ -17,8 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://d1uppvnag63ij" path="res://buttons/ui_buttons_arrow_down_PRESSED-export.png" id="14_7rnft"]
 [ext_resource type="Script" path="res://scripts/Camera.gd" id="16_bge3p"]
 [ext_resource type="PackedScene" uid="uid://vseicwmd8bp7" path="res://scenes/big_sword.tscn" id="16_jb8vv"]
-[ext_resource type="PackedScene" uid="uid://cpc0yro4olabl" path="res://scenes/hammer.tscn" id="18_3edj8"]
-[ext_resource type="PackedScene" uid="uid://cwkkewybvvxt8" path="res://scenes/bow.tscn" id="18_wty1f"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1e2y"]
 atlas = ExtResource("2_r4d88")
@@ -445,6 +443,30 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(1, 1)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.14159]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../arma4:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5708]
+}
 
 [sub_resource type="Animation" id="Animation_nbydt"]
 resource_name = "move"
@@ -473,6 +495,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5708]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../arma4:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.5708]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_vuhk5"]
@@ -569,6 +615,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector2(1, 1)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.14159]
+}
 
 [sub_resource type="Animation" id="Animation_s2bq7"]
 resource_name = "move"
@@ -597,6 +655,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1.4, 1.4), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [3.14159]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_uju80"]
@@ -729,10 +799,11 @@ _data = {
 "move": SubResource("Animation_ogms7")
 }
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("weapon_manager")]
 position = Vector2(306, 92)
 collision_layer = 2
 script = ExtResource("1_q0jsm")
+weapon_manager = NodePath("WEapons")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_pc5kv")
@@ -745,7 +816,7 @@ shape = SubResource("CircleShape2D_ya0r3")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="left" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(498, 295)
+position = Vector2(538, 294)
 scale = Vector2(1.65625, 1.625)
 texture_normal = ExtResource("7_713o8")
 texture_pressed = ExtResource("8_l8t1h")
@@ -753,7 +824,7 @@ action = "ui_left"
 visibility_mode = 1
 
 [node name="right" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(577, 296)
+position = Vector2(606, 294)
 scale = Vector2(1.53125, 1.625)
 texture_normal = ExtResource("9_od25r")
 texture_pressed = ExtResource("10_tpvw8")
@@ -803,14 +874,13 @@ autoplay = "move"
 
 [node name="arma2" type="Marker2D" parent="WEapons"]
 position = Vector2(32, 64)
+rotation = 3.14159
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WEapons/arma2"]
 libraries = {
 "": SubResource("AnimationLibrary_vuhk5")
 }
 autoplay = "move"
-
-[node name="Bow" parent="WEapons/arma2" instance=ExtResource("18_wty1f")]
 
 [node name="arma3" type="Marker2D" parent="WEapons"]
 position = Vector2(-32, -64)
@@ -823,6 +893,7 @@ autoplay = "move"
 
 [node name="arma4" type="Marker2D" parent="WEapons"]
 position = Vector2(-46, 79)
+rotation = 3.14159
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="WEapons/arma4"]
 libraries = {
@@ -839,8 +910,6 @@ libraries = {
 }
 autoplay = "move"
 
-[node name="Big_Sword" parent="WEapons/arma5" instance=ExtResource("16_jb8vv")]
-
 [node name="arma6" type="Marker2D" parent="WEapons"]
 position = Vector2(32, -64)
 
@@ -849,5 +918,3 @@ libraries = {
 "": SubResource("AnimationLibrary_ox22l")
 }
 autoplay = "move"
-
-[node name="Hammer" parent="WEapons/arma6" instance=ExtResource("18_3edj8")]

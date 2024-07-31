@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2xbyleaw80hi"]
+
+[ext_resource type="PackedScene" uid="uid://do6f25vklsr6m" path="res://scenes/coin.tscn" id="1_ie50f"]
+[ext_resource type="Texture2D" uid="uid://v6dxnidsct2e" path="res://icons/diamante.png" id="2_hb8th"]
+
+[node name="Diamond" instance=ExtResource("1_ie50f")]
+valor_do_item = Array[int]([5, 15])
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_hb8th")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, -5)

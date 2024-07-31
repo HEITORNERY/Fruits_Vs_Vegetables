@@ -1,5 +1,12 @@
-CollisionShape2D
+Button
+HBoxContainer
+Control
+Label
+VBoxContainer
+ColorRect
+TextureRect
 Sprite2D
+CollisionShape2D
 Area2D
-AnimationPlayer
 Timer
+AnimationPlayer
