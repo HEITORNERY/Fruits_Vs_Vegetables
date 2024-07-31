@@ -1,7 +1,9 @@
-res://Assets (Fonte)/OpenType (.otf)
-res://Assets (Fonte)/Web Open Font Format (.woff)
-res://icons
 res://scripts
 res://scenes
 res://player
+res://Assets (Fonte)/TrueType (.ttf)
+res://background_menu
 res://guns
+res://Assets (Fonte)/OpenType (.otf)
+res://Assets (Fonte)/Web Open Font Format (.woff)
+res://icons

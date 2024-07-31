@@ -2,13 +2,52 @@
 
 [ext_resource type="Script" path="res://scripts/spear.gd" id="1_6n8h1"]
 [ext_resource type="Texture2D" uid="uid://b87c8mx55vjg1" path="res://guns/spear.png" id="1_o4vsy"]
-[ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_xs8i8"]
+[ext_resource type="Texture2D" uid="uid://bekpe126enxf" path="res://player/mao_banana_guy.png" id="3_wei8t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjcg1"]
 size = Vector2(19, 26)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jrq3"]
 radius = 37.0135
+
+[sub_resource type="Animation" id="Animation_eurca"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AttackArea/CollisionShape2D:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_pyoo5"]
 resource_name = "attack"
@@ -50,45 +89,6 @@ tracks/2/keys = {
 "values": [true, false, true]
 }
 
-[sub_resource type="Animation" id="Animation_eurca"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("AttackArea/CollisionShape2D:disabled")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5lieu"]
 _data = {
 "RESET": SubResource("Animation_eurca"),
@@ -105,11 +105,11 @@ texture = ExtResource("1_o4vsy")
 
 [node name="Hand_1" type="Sprite2D" parent="."]
 position = Vector2(0, 8)
-texture = ExtResource("2_xs8i8")
+texture = ExtResource("3_wei8t")
 
 [node name="Hand_2" type="Sprite2D" parent="."]
 position = Vector2(0, 35)
-texture = ExtResource("2_xs8i8")
+texture = ExtResource("3_wei8t")
 
 [node name="AttackArea" type="Area2D" parent="."]
 collision_layer = 4

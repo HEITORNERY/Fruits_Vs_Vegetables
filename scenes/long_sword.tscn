@@ -2,13 +2,52 @@
 
 [ext_resource type="Script" path="res://scripts/long_sword.gd" id="1_lldwn"]
 [ext_resource type="Texture2D" uid="uid://dcm3nu7qoyc50" path="res://guns/long_sword.png" id="1_on1fe"]
-[ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_smq0y"]
+[ext_resource type="Texture2D" uid="uid://bekpe126enxf" path="res://player/mao_banana_guy.png" id="3_601sy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_md553"]
 radius = 33.2415
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rbtr3"]
 size = Vector2(7, 44)
+
+[sub_resource type="Animation" id="Animation_oe0o3"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AttackArea/CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
 [sub_resource type="Animation" id="Animation_unthj"]
 resource_name = "attack"
@@ -50,45 +89,6 @@ tracks/2/keys = {
 "values": [0.0, -0.610865, 3.14159, -0.610865, 3.14159, 0.0]
 }
 
-[sub_resource type="Animation" id="Animation_oe0o3"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AttackArea/CollisionShape2D:disabled")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:rotation")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_60dww"]
 _data = {
 "RESET": SubResource("Animation_oe0o3"),
@@ -106,12 +106,12 @@ texture = ExtResource("1_on1fe")
 [node name="Hand_1" type="Sprite2D" parent="."]
 position = Vector2(-1, 17)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_smq0y")
+texture = ExtResource("3_601sy")
 
 [node name="Hand_2" type="Sprite2D" parent="."]
 position = Vector2(-1, 25)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_smq0y")
+texture = ExtResource("3_601sy")
 
 [node name="DetectionArea" type="Area2D" parent="."]
 collision_layer = 4

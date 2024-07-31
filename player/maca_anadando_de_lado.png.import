@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1i12yh2iau8g"
-path="res://.godot/imported/mao.png-ffb85065bc12c450782cbe73baceccf8.ctex"
+uid="uid://d26lrj6pdu58o"
+path="res://.godot/imported/maca_anadando_de_lado.png-2ee47db721eafefeeebb11c7bbd84564.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/mao.png"
-dest_files=["res://.godot/imported/mao.png-ffb85065bc12c450782cbe73baceccf8.ctex"]
+source_file="res://player/maca_anadando_de_lado.png"
+dest_files=["res://.godot/imported/maca_anadando_de_lado.png-2ee47db721eafefeeebb11c7bbd84564.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://cwkkewybvvxt8"]
 
 [ext_resource type="Script" path="res://scripts/Bow.gd" id="1_oh2q3"]
-[ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_8lq0k"]
 [ext_resource type="Texture2D" uid="uid://ttev25bb0r64" path="res://guns/armas_spritesheet.png" id="2_jvv1d"]
+[ext_resource type="Texture2D" uid="uid://bekpe126enxf" path="res://player/mao_banana_guy.png" id="3_osy04"]
 
 [sub_resource type="Animation" id="Animation_bqh0k"]
 length = 0.001
@@ -95,12 +95,12 @@ region_rect = Rect2(125.27, 53.1372, 35.2691, 29.8638)
 [node name="Mao_1" type="Sprite2D" parent="."]
 position = Vector2(-16, 0)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_8lq0k")
+texture = ExtResource("3_osy04")
 
 [node name="MAO_2" type="Sprite2D" parent="."]
 position = Vector2(-3, -10)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_8lq0k")
+texture = ExtResource("3_osy04")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

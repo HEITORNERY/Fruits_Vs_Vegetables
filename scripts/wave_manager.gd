@@ -8,7 +8,7 @@ const pimentao : PackedScene = preload("res://scenes/pimentao.tscn")
 @onready var interface = $"../Interface"
 @export_category("Variables")
 @export var initial_position_player : Vector2 = Vector2(317, 179)
-@export var player : Player = null
+@onready var player = $"../SpawnPlayer"
 var wave_dict : Dictionary = {
 	1: {
 		"wave_duration": 20,
@@ -167,4 +167,4 @@ func clear_map() -> void:
 func start_new_wave() -> void:
 	wave_duration.start(wave_dict[current_wave]["wave_duration"])
 	player.global_position = initial_position_player
-	player.reset_health()
+	global.player.reset_health()

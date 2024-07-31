@@ -94,11 +94,11 @@ offset_right = 304.0
 offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 3
+theme_override_constants/separation = 6
 alignment = 1
 
 [node name="SLOT1" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
-custom_minimum_size = Vector2(125, 250)
+custom_minimum_size = Vector2(100, 250)
 layout_mode = 2
 color = Color(1, 1, 1, 0.270588)
 
@@ -134,7 +134,7 @@ alignment = 1
 [node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT1/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+text = "Arma de ataque a distância (Dano: 5 )"
 label_settings = SubResource("LabelSettings_e8ccw")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -159,7 +159,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
 text = " 30 moedas"
 
 [node name="SLOT2" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
-custom_minimum_size = Vector2(125, 250)
+custom_minimum_size = Vector2(100, 250)
 layout_mode = 2
 color = Color(1, 1, 1, 0.270588)
 
@@ -195,7 +195,7 @@ alignment = 1
 [node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+text = "Arma de ataque a distância (Dano: 5 )"
 label_settings = SubResource("LabelSettings_e8ccw")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -211,13 +211,16 @@ alignment = 1
 
 [node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT2/VBoxContainer/ButtonContainer" groups=["choose_button"]]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
 theme_override_fonts/font = ExtResource("4_onxeu")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
 text = " 30 moedas"
 
 [node name="SLOT3" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
-custom_minimum_size = Vector2(125, 250)
+custom_minimum_size = Vector2(100, 250)
 layout_mode = 2
 color = Color(1, 1, 1, 0.270588)
 
@@ -253,7 +256,7 @@ alignment = 1
 [node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+text = "Arma de ataque a distância (Dano: 5 )"
 label_settings = SubResource("LabelSettings_e8ccw")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -269,13 +272,16 @@ alignment = 1
 
 [node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT3/VBoxContainer/ButtonContainer" groups=["choose_button"]]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
 theme_override_fonts/font = ExtResource("4_onxeu")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
 text = " 30 moedas"
 
 [node name="SLOT4" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
-custom_minimum_size = Vector2(125, 250)
+custom_minimum_size = Vector2(100, 250)
 layout_mode = 2
 color = Color(1, 1, 1, 0.270588)
 
@@ -311,7 +317,7 @@ alignment = 1
 [node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+text = "Arma de ataque a distância (Dano: 5 )"
 label_settings = SubResource("LabelSettings_e8ccw")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -327,13 +333,16 @@ alignment = 1
 
 [node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT4/VBoxContainer/ButtonContainer" groups=["choose_button"]]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
 theme_override_fonts/font = ExtResource("4_onxeu")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
 text = " 30 moedas"
 
 [node name="SLOT5" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
-custom_minimum_size = Vector2(125, 250)
+custom_minimum_size = Vector2(100, 250)
 layout_mode = 2
 color = Color(1, 1, 1, 0.270588)
 
@@ -369,7 +378,7 @@ alignment = 1
 [node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
-text = "Desbloquei o arco, uma arma de ataque a distância (Dano: 5 | Tempo de REcarga: 0.6 s)"
+text = "Arma de ataque a distância (Dano: 5 )"
 label_settings = SubResource("LabelSettings_e8ccw")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -385,6 +394,70 @@ alignment = 1
 
 [node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT5/VBoxContainer/ButtonContainer" groups=["choose_button"]]
 layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
+theme_override_fonts/font = ExtResource("4_onxeu")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")
+text = " 30 moedas"
+
+[node name="SLOT6" type="ColorRect" parent="BetweenWaves/Background/HBoxContainer"]
+custom_minimum_size = Vector2(100, 250)
+layout_mode = 2
+color = Color(1, 1, 1, 0.270588)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -53.0
+offset_right = 90.0
+offset_bottom = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer"]
+layout_mode = 2
+text = "Arco LVL. 1"
+label_settings = SubResource("LabelSettings_ypo1x")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginMiddle" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DEscription" type="Label" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Arma de ataque a distância (Dano: 5 )"
+label_settings = SubResource("LabelSettings_e8ccw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MarginMiddle2" type="Control" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
+layout_mode = 2
+
+[node name="ButtonContainer" type="HBoxContainer" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="BetweenWaves/Background/HBoxContainer/SLOT6/VBoxContainer/ButtonContainer" groups=["choose_button"]]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.481789, 0.481789, 0.481789, 1)
+theme_override_colors/font_hover_color = Color(0.886275, 0.968627, 0, 1)
 theme_override_fonts/font = ExtResource("4_onxeu")
 theme_override_font_sizes/font_size = 12
 theme_override_styles/focus = SubResource("StyleBoxEmpty_udu2k")

@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://cpc0yro4olabl"]
 
 [ext_resource type="Script" path="res://scripts/hammer.gd" id="1_aqnk0"]
-[ext_resource type="Texture2D" uid="uid://1i12yh2iau8g" path="res://player/mao.png" id="2_imi58"]
 [ext_resource type="Texture2D" uid="uid://cqxd7268pwsk2" path="res://guns/hammer.png" id="2_vgpik"]
+[ext_resource type="Texture2D" uid="uid://bekpe126enxf" path="res://player/mao_banana_guy.png" id="3_aid5f"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wos45"]
 radius = 56.1427
@@ -83,10 +83,10 @@ texture = ExtResource("2_vgpik")
 
 [node name="Mao_1" type="Sprite2D" parent="."]
 position = Vector2(0, 44)
-texture = ExtResource("2_imi58")
+texture = ExtResource("3_aid5f")
 
 [node name="Mao_2" type="Sprite2D" parent="."]
-texture = ExtResource("2_imi58")
+texture = ExtResource("3_aid5f")
 
 [node name="DetectionArea" type="Area2D" parent="."]
 collision_layer = 4

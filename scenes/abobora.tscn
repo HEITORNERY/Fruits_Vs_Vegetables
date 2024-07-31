@@ -217,8 +217,11 @@ animation = &"walk_lado"
 visible = false
 shape = SubResource("CircleShape2D_gyptt")
 
-[node name="RangeArea" parent="." index="2"]
-visible = false
+[node name="Timer" parent="." index="3"]
+wait_time = 0.1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxArea" index="0"]
 shape = SubResource("CircleShape2D_a7lxr")
+
+[node name="Invincibility_Timer" parent="HitBoxArea" index="1"]
+wait_time = 0.1

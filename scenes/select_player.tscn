@@ -1,0 +1,76 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2iuuaprgkm4s"]
+
+[ext_resource type="FontFile" uid="uid://ydeqyjqccn1q" path="res://Assets (Fonte)/TrueType (.ttf)/Kaph-Regular.ttf" id="1_0lvx6"]
+[ext_resource type="Script" path="res://scripts/select_player.gd" id="1_ielmn"]
+[ext_resource type="Texture2D" uid="uid://bnoawscxa47w8" path="res://player/player_1.png" id="2_irhmb"]
+[ext_resource type="Texture2D" uid="uid://cehpj0g4e5j7x" path="res://player/player_2.png" id="3_boa5y"]
+[ext_resource type="Texture2D" uid="uid://4l0haoyqik8" path="res://player/player_3.png" id="4_tiu76"]
+
+[node name="SelectPlayer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ielmn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.310617, 0.310617, 0.310617, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 41.0
+offset_right = 673.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.109804, 0.952941, 0.929412, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_0lvx6")
+text = "EScolha seu pesronagem"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 95.0
+offset_right = 671.0
+offset_bottom = 223.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Player1" type="TextureButton" parent="HBoxContainer/MarginContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_irhmb")
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Player2" type="TextureButton" parent="HBoxContainer/MarginContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("3_boa5y")
+
+[node name="MarginContainer3" type="MarginContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+
+[node name="Player3" type="TextureButton" parent="HBoxContainer/MarginContainer3"]
+layout_mode = 2
+texture_normal = ExtResource("4_tiu76")
+
+[connection signal="pressed" from="HBoxContainer/MarginContainer/Player1" to="." method="_on_player_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/MarginContainer2/Player2" to="." method="_on_player_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/MarginContainer3/Player3" to="." method="_on_player_3_pressed"]
