@@ -5,6 +5,7 @@ class_name Interface
 @export var wave_manager : WaveManager
 @export var slots_container : HBoxContainer
 var current_weapons = []
+var reroll_cost = 5
 func update_wave_and_time(wave: int, time: int) -> void:
 	wave_and_time.text = ("Onda " + str(wave) + "\n" + "Tempo Restante - " + time_in_seconds(time))
 func time_in_seconds(time : int) -> String:
@@ -18,6 +19,7 @@ func _ready():
 	global.interface = self
 	for button in get_tree().get_nodes_in_group("choose_button"):
 		button.pressed.connect(on_button_pressed.bind(button))
+		$BetweenWaves/Background/Gerar_De_Novo.text = "Rerrol (" + str(reroll_cost) +")"
 func load_between_waves(wave_state: bool, wave_container: bool):
 	get_tree().paused = wave_container
 	$BetweenWaves.visible = wave_container
@@ -27,10 +29,15 @@ func load_between_waves(wave_state: bool, wave_container: bool):
 func on_button_pressed(button: Button) -> void:
 	match button.name:
 		"Gerar_De_Novo":
-			pass
+			if global.money >= reroll_cost:
+				global.decrease_money(reroll_cost)
+				button.text = "Rerrol (" + str(reroll_cost) +")"
+				reroll_cost += 5
+				load_cards()
 		"Pular":
 			load_between_waves(true, false)
 			wave_manager.start_new_wave()
+			reroll_cost = 5
 		"Button":
 			var slot = button.get_parent().get_parent().get_parent()
 			var i = 0
