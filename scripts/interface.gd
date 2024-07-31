@@ -18,7 +18,6 @@ func _ready():
 	global.interface = self
 	for button in get_tree().get_nodes_in_group("choose_button"):
 		button.pressed.connect(on_button_pressed.bind(button))
-	global.increase_money(100)
 func load_between_waves(wave_state: bool, wave_container: bool):
 	get_tree().paused = wave_container
 	$BetweenWaves.visible = wave_container
@@ -40,19 +39,19 @@ func on_button_pressed(button: Button) -> void:
 					current_weapons[i]
 					var weapon_data = global.weapons_list[current_weapons[i]]
 					var weapon_level = global.unlock_weapons[current_weapons[i]] + 1
-					var cost = int(weapon_data[weapon_level]["cost"])
+					var cost = weapon_data[weapon_level]["cost"]
 					if global.money >= cost:
 						global.unlock_weapons[current_weapons[i]] += 1
 						global.decrease_money(cost)
 						slot.hide()
 						if weapon_level == 1:
-							print("Instanciar arma")
 							global.player.spawn_weapon({
 								"scene_path": weapon_data[weapon_level]["scene_path"],
 								"values": weapon_data[weapon_level]["values"]
 							})
 							break
-						print("Melhorar arma")
+						get_tree().call_group(current_weapons[i], "update_damage", weapon_data[weapon_level]["values"]["damage"])
+						get_tree().call_group(current_weapons[i], "update_attack_timer", weapon_data[weapon_level]["values"]["tempo_de_recarga"])
 					break
 				i += 1
 						

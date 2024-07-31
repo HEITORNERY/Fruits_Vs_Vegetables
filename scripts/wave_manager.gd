@@ -20,63 +20,63 @@ var wave_dict : Dictionary = {
 	2: {
 		"wave_duration": 25,
 		"wave_dificuldade": "easy",
-		"wave_enemies": [2, 4],
+		"wave_enemies": [1, 4],
 		"time_to_spawn_enemies": 4,
 		"wave_spots_utilizados": 2
 	},
 	3: {
 		"wave_duration": 30,
 		"wave_dificuldade": "easy",
-		"wave_enemies": [3, 5],
+		"wave_enemies": [1, 5],
 		"time_to_spawn_enemies": 3,
 		"wave_spots_utilizados": 2
 	},
 	4: {
 		"wave_duration": 35,
 		"wave_dificuldade": "easy_to_medium",
-		"wave_enemies": [3, 6],
+		"wave_enemies": [1, 6],
 		"time_to_spawn_enemies": 3,
 		"wave_spots_utilizados": 3
 	},
 	5: {
 		"wave_duration": 40,
 		"wave_dificuldade": "easy_to_medium",
-		"wave_enemies": [4, 6],
+		"wave_enemies": [1, 6],
 		"time_to_spawn_enemies": 4,
 		"wave_spots_utilizados": 2
 	},
 	6: {
 		"wave_duration": 45,
 		"wave_dificuldade": "easy_to_medium",
-		"wave_enemies": [5, 7],
+		"wave_enemies": [1, 7],
 		"time_to_spawn_enemies": 3,
 		"wave_spots_utilizados": 3
 	},
 	7: {
 		"wave_duration": 50,
 		"wave_dificuldade": "medium",
-		"wave_enemies": [4, 7],
+		"wave_enemies": [1, 7],
 		"time_to_spawn_enemies": 4,
 		"wave_spots_utilizados": 2
 	},
 	8: {
 		"wave_duration": 55,
 		"wave_dificuldade": "medium",
-		"wave_enemies": [5, 8],
+		"wave_enemies": [1, 8],
 		"time_to_spawn_enemies": 3,
 		"wave_spots_utilizados": 3
 	},
 	9: {
 		"wave_duration": 60,
 		"wave_dificuldade": "medium_to_hard",
-		"wave_enemies": [6, 9],
+		"wave_enemies": [1, 9],
 		"time_to_spawn_enemies": 3,
 		"wave_spots_utilizados": 3
 	},
 	10: {
 		"wave_duration": 65,
 		"wave_dificuldade": "hard",
-		"wave_enemies": [7, 10],
+		"wave_enemies": [1, 10],
 		"time_to_spawn_enemies": 2,
 		"wave_spots_utilizados": 3
 	}
