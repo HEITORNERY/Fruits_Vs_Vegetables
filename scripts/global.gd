@@ -453,11 +453,19 @@ var unlock_weapons = {
 }
 var player_dir
 var spawn_player : Node2D
+var money_spend : int = 0
+var time_alive : int = 0
+var enemies_killed : int = 0
+var damage_maked : int = 0
+var damage_suffer : int = 0
+var money_gasto : int = 0
 func increase_money(value : int) -> void:
 	money += value
+	money_spend += value
 	interface.update_coins(money)
 func decrease_money(value: int):
 	money -= value
+	money_gasto += value
 	interface.update_coins(money)
 func instance_node(node, location, parent):
 	var node_instance = node.instance()

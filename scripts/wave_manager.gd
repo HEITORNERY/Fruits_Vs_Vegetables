@@ -88,12 +88,10 @@ func _ready():
 	interface.update_wave_and_time(current_wave, wave_duration.time_left - 1)
 	spawn_enemies()
 func _on_wave_duration_timeout():
-	current_wave += 1
-	if current_wave >= 10:
-		print("Você Venceu!")
-		return
-	#get_tree().paused = true
 	clear_map()
+	current_wave += 1
+	if current_wave >= wave_dict.size():
+		get_tree().change_scene_to_file("res://scenes/after_game.tscn")
 func _on_time_to_spawn_enemy_timeout():
 	spawn_enemies()
 	time_to_spawn_enemy.start(wave_dict[current_wave]["time_to_spawn_enemies"])
@@ -157,6 +155,7 @@ func _spawn_enemies(marker : Node2D) -> void:
 	enemy.global_position = marker.global_position
 	get_parent().call_deferred("add_child", enemy)
 func _on_current_time_wave_timeout():
+	global.time_alive += 1
 	interface.update_wave_and_time(current_wave, wave_duration.time_left)
 func clear_map() -> void:
 	for children in get_parent().get_children():

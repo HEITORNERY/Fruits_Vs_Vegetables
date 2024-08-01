@@ -1,0 +1,153 @@
+[gd_scene load_steps=4 format=3 uid="uid://875d81mn3cid"]
+
+[ext_resource type="Script" path="res://scripts/after_game.gd" id="1_2xln2"]
+[ext_resource type="Texture2D" uid="uid://cgpcws60yhnxm" path="res://background_menu/menu_background.png" id="1_yydja"]
+[ext_resource type="FontFile" uid="uid://bw7i65hi8ws7f" path="res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf" id="2_d87fn"]
+
+[node name="AfterGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2xln2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yydja")
+expand_mode = 1
+
+[node name="Mask" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.247059, 0.247059, 0.247059, 0.823529)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -229.0
+offset_top = -41.0
+offset_right = 230.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Menu" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.956863, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.909804, 1)
+theme_override_colors/font_hover_color = Color(0.929412, 0.317647, 0.317647, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Menu
+"
+
+[node name="Quit" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.956863, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0.909804, 1)
+theme_override_colors/font_hover_color = Color(0.929412, 0.317647, 0.317647, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Quit
+"
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -262.0
+offset_top = -32.5
+offset_right = 262.0
+offset_bottom = 32.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="InimigosDerrotados" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Inimigos Derrotados: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DanoCausado" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Dano Cusado: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DanoSofrido" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Dano Sofrido: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TempoVivo" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Tempo Vivo: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DinheiroGanho" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Dinheiro Gasto: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DinheiroGasto" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.639096, 0.758076, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_d87fn")
+text = "Dinheiro Gasto: 9999"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="HBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_quit_pressed"]

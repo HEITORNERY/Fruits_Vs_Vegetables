@@ -38,8 +38,9 @@ func update_health(_type: String, _value: int) -> void:
 	match _type:
 		"damage":
 			health -= _value
+			global.damage_suffer += _value
 			if health <= 0:
-				queue_free()
+				get_tree().change_scene_to_file("res://scenes/after_game.tscn")
 		"heal":
 			health += _value
 			if health >= max_health:
