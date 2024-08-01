@@ -37,7 +37,7 @@ func _physics_process(delta):
 func update_health(_type: String, _value: int) -> void:
 	match _type:
 		"damage":
-			health -= sign(_value)
+			health -= _value
 			global.damage_suffer += _value
 			if health <= 0:
 				bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/game_over.ogg")

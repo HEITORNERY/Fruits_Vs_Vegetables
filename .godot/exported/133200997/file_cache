@@ -11,11 +11,11 @@ res://scenes/enemy_pepino.tscn::7eda5b75d5a7342cda180a0d6ea36679::1722495726::re
 res://scenes/enemy_template.tscn::831b7cccdcb308f1acc2c85dc8720948::1722495726::res://.godot/exported/133200997/export-0042a31e4dfbc043967da6033e8626c5-enemy_template.scn
 res://scenes/game_level.tscn::79909b20d7e3a4ae308884cca7632a0e::1722495726::res://.godot/exported/133200997/export-0f707afc6b6fd43fa5fb1a454f13e559-game_level.scn
 res://scenes/hammer.tscn::1c66778ed986caaf1e6262bca013ea91::1722495726::res://.godot/exported/133200997/export-490a1213b79b5180cda5a36dd11e6761-hammer.scn
-res://scenes/interface.tscn::eaf3c545dee57a3f3ab3c9570824e4d1::1722513886::res://.godot/exported/133200997/export-54363c46c26e42648f2d0284e954c923-interface.scn
+res://scenes/interface.tscn::eaf3c545dee57a3f3ab3c9570824e4d1::1722530492::res://.godot/exported/133200997/export-54363c46c26e42648f2d0284e954c923-interface.scn
 res://scenes/long_sword.tscn::d87517568877921fdc7535c2642f572a::1722495726::res://.godot/exported/133200997/export-cd53f09d2ff15eed87a6847442f67956-long_sword.scn
-res://scenes/main_menu.tscn::ebf312993fb022852a2f2c01dad08bf5::1722513460::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
+res://scenes/main_menu.tscn::ebf312993fb022852a2f2c01dad08bf5::1722530260::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
 res://scenes/pimentao.tscn::ab930ab5e0c7b6bedbbd2278f0279b51::1722495726::res://.godot/exported/133200997/export-d7b408a83c03e28fd57f85c9082f8283-pimentao.scn
-res://scenes/player.tscn::efd53d3fcfdffb7abd1bae485fc3e2a5::1722513460::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/player.tscn::7a64e6aa2117d61eac5744ef9563eda6::1722531597::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
 res://scenes/player_2.tscn::95424f4e1276f46dca434c50c71cf5eb::1722495726::res://.godot/exported/133200997/export-6b3fe710cf4b159ca1c17d619b8227b0-player_2.scn
 res://scenes/player_3.tscn::85628f1917bb3557fd2e107047e7b44e::1722495726::res://.godot/exported/133200997/export-cc6cf598a3fe7c54e3ba4203384b608e-player_3.scn
 res://scenes/popup.tscn::b0c5e15b0086739aaa086855bf1d62fb::1722495726::res://.godot/exported/133200997/export-25bf9af5f1e899b8e67c94599c1aa55f-popup.scn

@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://d0hh8uap436bb"]
+[gd_scene load_steps=82 format=3 uid="uid://d0hh8uap436bb"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_q0jsm"]
 [ext_resource type="Texture2D" uid="uid://d3mep17nnjb6o" path="res://player/orange_idle_back.png" id="2_r4d88"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://d1uppvnag63ij" path="res://buttons/ui_buttons_arrow_down_PRESSED-export.png" id="14_7rnft"]
 [ext_resource type="Script" path="res://scripts/Camera.gd" id="16_bge3p"]
 [ext_resource type="PackedScene" uid="uid://vseicwmd8bp7" path="res://scenes/big_sword.tscn" id="16_jb8vv"]
+[ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="18_xieid"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1e2y"]
 atlas = ExtResource("2_r4d88")
@@ -919,3 +920,20 @@ libraries = {
 "": SubResource("AnimationLibrary_ox22l")
 }
 autoplay = "move"
+
+[node name="Hearts" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="Hearts"]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="Hearts/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("18_xieid")
