@@ -6,9 +6,6 @@ class_name Interface
 @export var slots_container : HBoxContainer
 var current_weapons = []
 var reroll_cost = 5
-var heart_index = 0
-var max_heart_index = 2
-@onready var heart_state = {}
 func update_wave_and_time(wave: int, time: int) -> void:
 	wave_and_time.text = ("Onda " + str(wave) + "\n" + "Tempo Restante - " + time_in_seconds(time))
 func time_in_seconds(time : int) -> String:
@@ -19,19 +16,6 @@ func update_coins(value : int):
 	$HBoxContainer/Label.text = str(value)
 func _ready():
 	load_cards()
-	heart_state = {"objects": {
-		$HeartContainer/Heart1:3,
-		$HeartContainer/Heart2:3,
-		$HeartContainer/Heart3:3,
-		$HeartContainer/Heart4:3,
-		$HeartContainer/Heart5:3
-	},
-	"textures": {
-		3: "res://icons/coração_cheiio.png",
-		2: "res://icons/coração_pela_metade.png",
-		1: "res://icons/coração_vazio.png"
-	}
-	}
 	global.interface = self
 	for button in get_tree().get_nodes_in_group("choose_button"):
 		button.pressed.connect(on_button_pressed.bind(button))
@@ -40,7 +24,6 @@ func load_between_waves(wave_state: bool, wave_container: bool):
 	get_tree().paused = wave_container
 	$BetweenWaves.visible = wave_container
 	$Wave_And_Time.visible = wave_state
-	$HeartContainer.visible = wave_state
 	if wave_container:
 		load_cards()
 func on_button_pressed(button: Button) -> void:
@@ -101,16 +84,3 @@ func load_cards():
 		slot.get_node("VBoxContainer/ButtonContainer/Button").text = str(global.weapons_list[weapon][nível_da_arma]["cost"]) + " moedas"
 		slot.show()
 		i += 1 
-func update_health():
-	var hearts_key = heart_state["objects"].keys()
-	if heart_index >= hearts_key.size():
-		bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/game_over.ogg")
-		get_tree().change_scene_to_file("res://scenes/after_game.tscn")
-		return
-	heart_state["objects"][hearts_key[heart_index]] -= 1
-	var heart_health = heart_state["objects"][hearts_key[heart_index]]
-	if heart_health == 0:
-		heart_index += 1
-		update_health()
-		return
-	hearts_key[heart_index].texture = load(heart_state["textures"][heart_health])
