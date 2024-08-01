@@ -14,3 +14,4 @@ res://scripts/enemy.gd
 res://scripts/player.gd
 res://scripts/interface.gd
 res://scripts/Camera.gd
+res://scenes/player.tscn

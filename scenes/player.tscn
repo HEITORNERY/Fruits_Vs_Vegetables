@@ -847,7 +847,7 @@ texture_pressed = ExtResource("14_7rnft")
 action = "ui_down"
 visibility_mode = 1
 
-[node name="Camera2D" type="Camera2D" parent="." groups=["player_camera"]]
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("player") groups=["player_camera"]]
 limit_left = 0
 limit_top = 0
 limit_right = 1632
@@ -858,6 +858,7 @@ drag_vertical_enabled = true
 editor_draw_limits = true
 editor_draw_drag_margin = true
 script = ExtResource("16_bge3p")
+player = NodePath("..")
 
 [node name="WEapons" type="Node2D" parent="."]
 
