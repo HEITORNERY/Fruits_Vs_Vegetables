@@ -15,3 +15,12 @@ res://scripts/player.gd
 res://scripts/interface.gd
 res://scripts/Camera.gd
 res://scenes/player.tscn
+res://scenes/bgm.tscn
+res://scripts/bgm.gd
+res://scripts/sfx.gd
+res://scenes/sfx.tscn
+res://scenes/diamond.tscn
+res://scripts/coin.gd
+res://scenes/coin.tscn
+res://scenes/toggle_volume.tscn
+res://scripts/toggle_volume.gd

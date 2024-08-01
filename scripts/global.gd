@@ -459,6 +459,8 @@ var enemies_killed : int = 0
 var damage_maked : int = 0
 var damage_suffer : int = 0
 var money_gasto : int = 0
+var sfx_state : bool = true
+var volume_state : bool = true
 func increase_money(value : int) -> void:
 	money += value
 	money_spend += value

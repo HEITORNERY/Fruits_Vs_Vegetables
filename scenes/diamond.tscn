@@ -5,6 +5,7 @@
 
 [node name="Diamond" instance=ExtResource("1_ie50f")]
 valor_do_item = Array[int]([5, 15])
+sfx_path = "res://Assets (MUSICAS)/musics/sfx/gold_2.ogg"
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_hb8th")

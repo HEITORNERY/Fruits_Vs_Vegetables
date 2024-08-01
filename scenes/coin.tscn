@@ -11,6 +11,7 @@ collision_layer = 2
 collision_mask = 2
 script = ExtResource("1_tsk0f")
 valor_do_item = Array[int]([1, 5])
+sfx_path = "res://Assets (MUSICAS)/musics/sfx/gold_1.ogg"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_rhsfs")

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0pu2tbsub60v"]
+
+[ext_resource type="Texture2D" uid="uid://bvw6skuubm440" path="res://icons/audio_on.png" id="1_kyagn"]
+[ext_resource type="Script" path="res://scripts/toggle_volume.gd" id="1_wxo25"]
+[ext_resource type="Texture2D" uid="uid://dy6cyh88yvq61" path="res://icons/som_on.png" id="2_tv6qy"]
+
+[node name="ToggleVolume" type="CanvasLayer"]
+layer = 2
+script = ExtResource("1_wxo25")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -50.0
+offset_top = 40.0
+offset_right = -10.0
+offset_bottom = 116.0
+grow_horizontal = 0
+
+[node name="Sfx" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_kyagn")
+
+[node name="Volume" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("2_tv6qy")
+
+[connection signal="pressed" from="VBoxContainer/Sfx" to="." method="_on_sfx_pressed"]
+[connection signal="pressed" from="VBoxContainer/Volume" to="." method="_on_Volume_pressed"]

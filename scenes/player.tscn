@@ -803,6 +803,7 @@ _data = {
 position = Vector2(306, 92)
 collision_layer = 2
 script = ExtResource("1_q0jsm")
+health = 15
 weapon_manager = NodePath("WEapons")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

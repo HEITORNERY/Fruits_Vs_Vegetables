@@ -92,6 +92,8 @@ func _on_wave_duration_timeout():
 	current_wave += 1
 	if current_wave >= wave_dict.size():
 		get_tree().change_scene_to_file("res://scenes/after_game.tscn")
+		return
+	bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/wave_success.ogg")
 func _on_time_to_spawn_enemy_timeout():
 	spawn_enemies()
 	time_to_spawn_enemy.start(wave_dict[current_wave]["time_to_spawn_enemies"])

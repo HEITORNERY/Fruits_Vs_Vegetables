@@ -37,9 +37,11 @@ func _physics_process(delta):
 func update_health(_type: String, _value: int) -> void:
 	match _type:
 		"damage":
-			health -= _value
+			health -= sign(_value)
+			global.interface.update_health()
 			global.damage_suffer += _value
 			if health <= 0:
+				bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/game_over.ogg")
 				get_tree().change_scene_to_file("res://scenes/after_game.tscn")
 		"heal":
 			health += _value

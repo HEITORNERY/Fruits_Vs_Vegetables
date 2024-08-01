@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 global="*res://scripts/global.gd"
+bgm="*res://scenes/bgm.tscn"
+togglevolume="*res://scenes/toggle_volume.tscn"
 
 [display]
 
