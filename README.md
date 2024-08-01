@@ -14,15 +14,10 @@ Use o mouse para interagir com os botões no desktop.
 No mobile use o touch para movimentar e pressionar os botões.
 O controle de xbox deve ser conectado ao pc e com o joystick é possível mover o player, mas a interação com os botões ainda é com o mouse.
 Veja os vídeo abaixo da gameplay do jogo.
-
-# Sistema de Login
-Quando o registro for feito, basta ir para a cena de login, onde vai colocar seu usuário e sua senha cadastrado no passo anterior.
-https://github.com/user-attachments/assets/f9b283ec-ae53-4d8b-a3f8-8199bd536259
-![login](https://github.com/user-attachments/assets/80d1451d-488a-4f84-8847-e425e1672237)
-
+https://github.com/user-attachments/assets/a8f90cba-013a-4e77-9bf8-d0e52c802e4a
 # Informações Adicionais do Jogo
 São 10 ondas de inimigos, tente sobreviver a todas, quando o tempo acabar vai ter uma tela de melhoria ou compra de armas, as armas atacam automaticamente os inimigos que entrarem no seu alcance de detecção.
 Quando você morrer ou terminar o jogo, vai aparecer suas estatísticas.
-
+https://github.com/user-attachments/assets/1cba2918-4e9a-491e-a5e4-d6cc1988eaa1
 # Por Fim, DIVIRTA-SE
 (https://heitornery.itch.io/fruits-vs-vegetables)
