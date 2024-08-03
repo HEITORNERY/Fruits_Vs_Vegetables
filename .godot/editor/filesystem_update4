@@ -1,8 +1,8 @@
-res://scenes/interface.tscn
-res://scenes/main_menu.tscn
-res://scenes/after_game.tscn
 res://scenes/player.tscn
-res://scripts/interface.gd
 res://scripts/player.gd
-res://scripts/after_game.gd
-res://scenes/hearts.tscn
+res://scripts/select_player.gd
+res://scripts/SpawnPlayer.gd
+res://scripts/main_menu.gd
+res://scenes/interface.tscn
+res://scripts/interface.gd
+res://scenes/main_menu.tscn

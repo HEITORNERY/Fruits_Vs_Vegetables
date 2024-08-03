@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3 uid="uid://d0hh8uap436bb"]
+[gd_scene load_steps=81 format=3 uid="uid://d0hh8uap436bb"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_q0jsm"]
 [ext_resource type="Texture2D" uid="uid://d3mep17nnjb6o" path="res://player/orange_idle_back.png" id="2_r4d88"]
@@ -17,7 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://d1uppvnag63ij" path="res://buttons/ui_buttons_arrow_down_PRESSED-export.png" id="14_7rnft"]
 [ext_resource type="Script" path="res://scripts/Camera.gd" id="16_bge3p"]
 [ext_resource type="PackedScene" uid="uid://vseicwmd8bp7" path="res://scenes/big_sword.tscn" id="16_jb8vv"]
-[ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="18_xieid"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1e2y"]
 atlas = ExtResource("2_r4d88")
@@ -817,7 +816,7 @@ shape = SubResource("CircleShape2D_ya0r3")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="left" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(538, 294)
+position = Vector2(11, 295)
 scale = Vector2(1.65625, 1.625)
 texture_normal = ExtResource("7_713o8")
 texture_pressed = ExtResource("8_l8t1h")
@@ -825,7 +824,7 @@ action = "ui_left"
 visibility_mode = 1
 
 [node name="right" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(606, 294)
+position = Vector2(81.9999, 294)
 scale = Vector2(1.53125, 1.625)
 texture_normal = ExtResource("9_od25r")
 texture_pressed = ExtResource("10_tpvw8")
@@ -833,7 +832,7 @@ action = "ui_right"
 visibility_mode = 1
 
 [node name="Up" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(15, 294)
+position = Vector2(607, 231)
 scale = Vector2(1.65625, 1.65625)
 texture_normal = ExtResource("11_nap62")
 texture_pressed = ExtResource("12_8tn3r")
@@ -841,7 +840,7 @@ action = "ui_up"
 visibility_mode = 1
 
 [node name="Down" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(92, 297)
+position = Vector2(609, 299)
 scale = Vector2(1.46875, 1.5)
 texture_normal = ExtResource("13_0aob3")
 texture_pressed = ExtResource("14_7rnft")
@@ -920,20 +919,3 @@ libraries = {
 "": SubResource("AnimationLibrary_ox22l")
 }
 autoplay = "move"
-
-[node name="Hearts" type="CanvasLayer" parent="."]
-
-[node name="Control" type="Control" parent="Hearts"]
-layout_mode = 3
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 40.0
-grow_horizontal = 0
-
-[node name="TextureRect" type="TextureRect" parent="Hearts/Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("18_xieid")

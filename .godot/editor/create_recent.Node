@@ -1,8 +1,8 @@
 TextureRect
+HBoxContainer
 Control
 CanvasLayer
 SubViewport
-HBoxContainer
 TextureButton
 VBoxContainer
 Button

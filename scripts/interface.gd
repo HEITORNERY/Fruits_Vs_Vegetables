@@ -84,3 +84,28 @@ func load_cards():
 		slot.get_node("VBoxContainer/ButtonContainer/Button").text = str(global.weapons_list[weapon][nível_da_arma]["cost"]) + " moedas"
 		slot.show()
 		i += 1 
+func _physics_process(delta):
+	if global.player.health <= 30 and global.player.health > 25:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_cheiio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 25 and global.player.health > 20:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_pela_metade.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png") 
+	elif global.player.health <= 20 and global.player.health > 15:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 15 and global.player.health > 10:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_pela_metade.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 10 and global.player.health > 5:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 5 and global.player.health > 0:
+		$HBoxContainer2/Hearts1.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_vazio.png")
+		$HBoxContainer2/Hearts2.texture = load("res://icons/coração_pela_metade.png")
