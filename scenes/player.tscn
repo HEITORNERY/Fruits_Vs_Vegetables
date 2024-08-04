@@ -832,7 +832,7 @@ action = "ui_right"
 visibility_mode = 1
 
 [node name="Up" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(607, 231)
+position = Vector2(660, 235)
 scale = Vector2(1.65625, 1.65625)
 texture_normal = ExtResource("11_nap62")
 texture_pressed = ExtResource("12_8tn3r")
@@ -840,7 +840,7 @@ action = "ui_up"
 visibility_mode = 1
 
 [node name="Down" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(609, 299)
+position = Vector2(664, 297)
 scale = Vector2(1.46875, 1.5)
 texture_normal = ExtResource("13_0aob3")
 texture_pressed = ExtResource("14_7rnft")

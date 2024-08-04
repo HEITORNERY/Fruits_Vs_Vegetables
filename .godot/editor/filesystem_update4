@@ -1,8 +1,7 @@
-res://scenes/player.tscn
-res://scripts/player.gd
-res://scripts/select_player.gd
-res://scripts/SpawnPlayer.gd
-res://scripts/main_menu.gd
-res://scenes/interface.tscn
-res://scripts/interface.gd
 res://scenes/main_menu.tscn
+res://scripts/wave_manager.gd
+res://scenes/player.tscn
+res://scenes/interface.tscn
+res://scenes/game_level.tscn
+res://scripts/game_level.gd
+res://scripts/Camera.gd
