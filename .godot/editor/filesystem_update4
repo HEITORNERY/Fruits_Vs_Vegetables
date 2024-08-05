@@ -1,5 +1,1 @@
-res://scenes/player.tscn
 res://scenes/interface.tscn
-res://scripts/interface.gd
-res://scenes/game_level.tscn
-res://scripts/game_level.gd

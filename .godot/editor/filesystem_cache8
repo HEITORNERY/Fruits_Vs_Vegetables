@@ -1,6 +1,6 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1722825682
-export_presets.cfg::TextFile::-1::1722824486::0::1::::<><>::
+::res://::1722825833
+export_presets.cfg::TextFile::-1::1722825682::0::1::::<><>::
 icon.svg::CompressedTexture2D::2202581799061448628::1722812631::1722813725::1::::<><>::
 README.md::TextFile::-1::1722812631::0::1::::<><>::
 ::res://Assets (Fonte)/::1722825076
@@ -53,10 +53,7 @@ pepino_parado.png::CompressedTexture2D::804454025288206692::1722812631::17228126
 pimentao_walk_costas.png::CompressedTexture2D::1084517707197996594::1722812631::1722812631::1::::<><>::
 pimentao_walk_frente.png::CompressedTexture2D::4362849956150614969::1722812631::1722812631::1::::<><>::
 pimentao_walk_lado.png::CompressedTexture2D::1445585014301903268::1722812631::1722812631::1::::<><>::
-::res://export/::1722825686
-index.apple-touch-icon.png::CompressedTexture2D::7497294715138472409::1722825673::1722825689::1::::<><>::
-index.icon.png::CompressedTexture2D::7466736361120119758::1722825673::1722825689::1::::<><>::
-index.png::CompressedTexture2D::4067475093708329448::1722825673::1722825689::1::::<><>::
+::res://export/::1722825821
 ::res://guns/::1722825076
 arco.png::CompressedTexture2D::934861207760315144::1722812631::1722812631::1::::<><>::
 arco_e_flecha.png::CompressedTexture2D::5322103494351509492::1722812631::1722812631::1::::<><>::
@@ -139,6 +136,7 @@ Bow.gd::GDScript::-1::1722824486::0::1::::Bow<>Node2D<>::
 Camera.gd::GDScript::-1::1722824486::0::1::::PlayerCamera<>Camera2D<>::
 coin.gd::GDScript::-1::1722824486::0::1::::ItensDropados<>Area2D<>::
 enemy.gd::GDScript::-1::1722824486::0::1::::Enemy<>CharacterBody2D<>::
+game_level.gd::GDScript::-1::1722824927::0::1::::<>Node2D<>::
 global.gd::GDScript::-1::1722824486::0::1::::Global<>Node<>::
 hammer.gd::GDScript::-1::1722824486::0::1::::Hammer<>Node2D<>::
 interface.gd::GDScript::-1::1722824806::0::1::::Interface<>CanvasLayer<>::
@@ -146,7 +144,6 @@ long_sword.gd::GDScript::-1::1722824486::0::1::::LongSword<>Node2D<>::
 main_menu.gd::GDScript::-1::1722824486::0::1::::<>Control<>::
 player.gd::GDScript::-1::1722824486::0::1::::Player<>CharacterBody2D<>::
 popup.gd::GDScript::-1::1722824486::0::1::::PopupText<>Label<>::
-game_level.gd::GDScript::-1::1722824927::0::1::::<>Node2D<>::
 select_player.gd::GDScript::-1::1722824486::0::1::::<>Control<>::
 sfx.gd::GDScript::-1::1722824486::0::1::::Sfx<>AudioStreamPlayer<>::
 SpawnPlayer.gd::GDScript::-1::1722824486::0::1::::<>Node2D<>::
