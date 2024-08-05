@@ -1,26 +1,26 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1722824955
+::res://::1722825682
 export_presets.cfg::TextFile::-1::1722824486::0::1::::<><>::
 icon.svg::CompressedTexture2D::2202581799061448628::1722812631::1722813725::1::::<><>::
 README.md::TextFile::-1::1722812631::0::1::::<><>::
-::res://Assets (Fonte)/::1722812631
+::res://Assets (Fonte)/::1722825076
 License.txt::TextFile::-1::1722812631::0::1::::<><>::
-::res://Assets (Fonte)/OpenType (.otf)/::1722812631
+::res://Assets (Fonte)/OpenType (.otf)/::1722825076
 Kaph-Italic.otf::FontFile::748232491927124041::1722812631::1722812631::1::::<><>::
 Kaph-Regular.otf::FontFile::3997178014335514125::1722812631::1722812631::1::::<><>::
-::res://Assets (Fonte)/TrueType (.ttf)/::1722812631
+::res://Assets (Fonte)/TrueType (.ttf)/::1722825076
 Kaph-Italic.ttf::FontFile::6712267684647866992::1722812631::1722812631::1::::<><>::
 Kaph-Regular.ttf::FontFile::1690998096441877928::1722812631::1722812631::1::::<><>::
-::res://Assets (Fonte)/Web Open Font Format (.woff)/::1722812631
+::res://Assets (Fonte)/Web Open Font Format (.woff)/::1722825076
 Kaph-Italic.woff::FontFile::1007550910702840905::1722812631::1722812631::1::::<><>::
 Kaph-Italic.woff2::FontFile::6368448922569888041::1722812631::1722812631::1::::<><>::
 Kaph-Regular.woff::FontFile::3279249895303276197::1722812631::1722812631::1::::<><>::
 Kaph-Regular.woff2::FontFile::3326308912479975930::1722812631::1722812631::1::::<><>::
-::res://Assets (MUSICAS)/::1722812631
-::res://Assets (MUSICAS)/musics/::1722812631
-::res://Assets (MUSICAS)/musics/bgm/::1722812631
+::res://Assets (MUSICAS)/::1722825076
+::res://Assets (MUSICAS)/musics/::1722825076
+::res://Assets (MUSICAS)/musics/bgm/::1722825076
 bgm_theme.ogg::AudioStreamOggVorbis::8480948898019281378::1722812631::1722812631::1::::<><>::
-::res://Assets (MUSICAS)/musics/sfx/::1722812631
+::res://Assets (MUSICAS)/musics/sfx/::1722825076
 arrow.mp3::AudioStreamMP3::6521881337186274831::1722812631::1722812631::1::::<><>::
 button_cancel.ogg::AudioStreamOggVorbis::4449742461856567976::1722812631::1722812631::1::::<><>::
 button_click.ogg::AudioStreamOggVorbis::2734603000129526588::1722812631::1722812631::1::::<><>::
@@ -30,9 +30,9 @@ game_over.ogg::AudioStreamOggVorbis::8724413398036063668::1722812631::1722812631
 gold_1.ogg::AudioStreamOggVorbis::4193481620228489958::1722812631::1722812631::1::::<><>::
 gold_2.ogg::AudioStreamOggVorbis::5034402525382725548::1722812631::1722812631::1::::<><>::
 wave_success.ogg::AudioStreamOggVorbis::3427479237408927830::1722812631::1722812631::1::::<><>::
-::res://background_menu/::1722812631
+::res://background_menu/::1722825076
 menu_background.png::CompressedTexture2D::5225101811454221798::1722812631::1722812631::1::::<><>::
-::res://buttons/::1722812631
+::res://buttons/::1722825076
 ui_buttons_arrow_down_NORMAL-export.png::CompressedTexture2D::396071984648638324::1722812631::1722812631::1::::<><>::
 ui_buttons_arrow_down_PRESSED-export.png::CompressedTexture2D::9026398205631490593::1722812631::1722812631::1::::<><>::
 ui_buttons_arrow_left_NORMAL.png::CompressedTexture2D::2436780296231618894::1722812631::1722812631::1::::<><>::
@@ -41,7 +41,7 @@ ui_buttons_arrow_right_NORMAL.png::CompressedTexture2D::8467010202929199674::172
 ui_buttons_arrow_right_PRESSED.png::CompressedTexture2D::2464208282860728484::1722812631::1722812631::1::::<><>::
 ui_buttons_arrow_up_NORMAL.png::CompressedTexture2D::7737771063311890917::1722812631::1722812631::1::::<><>::
 ui_buttons_arrow_up_PRESSED.png::CompressedTexture2D::841230057788343195::1722812631::1722812631::1::::<><>::
-::res://enemy/::1722812631
+::res://enemy/::1722825076
 abobora_dash.png::CompressedTexture2D::5604607895549455647::1722812631::1722812631::1::::<><>::
 abobora_walk_costas.png::CompressedTexture2D::6387754779283169834::1722812631::1722812631::1::::<><>::
 abobora_walk_frente.png::CompressedTexture2D::2722111321493575502::1722812631::1722812631::1::::<><>::
@@ -53,11 +53,11 @@ pepino_parado.png::CompressedTexture2D::804454025288206692::1722812631::17228126
 pimentao_walk_costas.png::CompressedTexture2D::1084517707197996594::1722812631::1722812631::1::::<><>::
 pimentao_walk_frente.png::CompressedTexture2D::4362849956150614969::1722812631::1722812631::1::::<><>::
 pimentao_walk_lado.png::CompressedTexture2D::1445585014301903268::1722812631::1722812631::1::::<><>::
-::res://export/::1722824957
-index.apple-touch-icon.png::CompressedTexture2D::2053949483586854040::1722824948::1722824962::1::::<><>::
-index.icon.png::CompressedTexture2D::2399623801652238690::1722824948::1722824962::1::::<><>::
-index.png::CompressedTexture2D::1955087817465545987::1722824948::1722824962::1::::<><>::
-::res://guns/::1722812631
+::res://export/::1722825686
+index.apple-touch-icon.png::CompressedTexture2D::7497294715138472409::1722825673::1722825689::1::::<><>::
+index.icon.png::CompressedTexture2D::7466736361120119758::1722825673::1722825689::1::::<><>::
+index.png::CompressedTexture2D::4067475093708329448::1722825673::1722825689::1::::<><>::
+::res://guns/::1722825076
 arco.png::CompressedTexture2D::934861207760315144::1722812631::1722812631::1::::<><>::
 arco_e_flecha.png::CompressedTexture2D::5322103494351509492::1722812631::1722812631::1::::<><>::
 armas_spritesheet.png::CompressedTexture2D::1373093040615181175::1722812631::1722812631::1::::<><>::
@@ -67,7 +67,7 @@ flecha.png::CompressedTexture2D::6231923991029458089::1722812631::1722812631::1:
 hammer.png::CompressedTexture2D::5943584317861041847::1722812631::1722812631::1::::<><>::
 long_sword.png::CompressedTexture2D::7326136663169676221::1722812631::1722812631::1::::<><>::
 spear.png::CompressedTexture2D::4768893644277169170::1722812631::1722812631::1::::<><>::
-::res://icons/::1722812631
+::res://icons/::1722825076
 audio_off.png::CompressedTexture2D::1942784803632941064::1722812631::1722812631::1::::<><>::
 audio_on.png::CompressedTexture2D::3907717638787285463::1722812631::1722812631::1::::<><>::
 button_icon.png::CompressedTexture2D::2867386921121945311::1722812631::1722812631::1::::<><>::
@@ -79,7 +79,7 @@ diamante.png::CompressedTexture2D::1538185346335094134::1722812631::1722812631::
 moeda.png::CompressedTexture2D::877303712982389022::1722812631::1722812631::1::::<><>::
 som_off.png::CompressedTexture2D::4436780724847466687::1722812631::1722812631::1::::<><>::
 som_on.png::CompressedTexture2D::8907954721981466624::1722812631::1722812631::1::::<><>::
-::res://player/::1722812631
+::res://player/::1722825076
 banana_guy_andando_de_costas.png::CompressedTexture2D::7668510040272698987::1722812631::1722812631::1::::<><>::
 banana_guy_andando_de_frente.png::CompressedTexture2D::2911128332830487805::1722812631::1722812631::1::::<><>::
 banana_guy_andando_de_lado.png::CompressedTexture2D::8333891574714741743::1722812631::1722812631::1::::<><>::
@@ -101,7 +101,7 @@ orange_walk_trás.png::CompressedTexture2D::3241290331167612531::1722812631::172
 player_1.png::CompressedTexture2D::3327817176566370389::1722812631::1722812631::1::::<><>::
 player_2.png::CompressedTexture2D::5068975536930134475::1722812631::1722812631::1::::<><>::
 player_3.png::CompressedTexture2D::60579854968044501::1722812631::1722812631::1::::<><>::
-::res://scenes/::1722824927
+::res://scenes/::1722825666
 abobora.tscn::PackedScene::4881681297756235742::1722812631::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://cl36cqu51d7mp::::res://enemy/abobora_dash.png<>uid://cxajngqcoaiv7::::res://enemy/abobora_walk_costas.png<>uid://be1u1m1pooxu1::::res://enemy/abobora_walk_frente.png<>uid://4xryqmdvw5v6::::res://enemy/abobora_walk_lado.png
 after_game.tscn::PackedScene::2384120569348860235::1722812631::0::1::::<><>::res://scripts/after_game.gd<>uid://cgpcws60yhnxm::::res://background_menu/menu_background.png<>uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf
 arrow.tscn::PackedScene::7879723810561935969::1722812631::0::1::::<><>::res://scripts/arrow.gd<>uid://cu1143svustor::::res://guns/flecha.png
@@ -115,7 +115,7 @@ enemy_pepino.tscn::PackedScene::7655417865943073467::1722812631::0::1::::<><>::u
 enemy_template.tscn::PackedScene::128580866373265014::1722812631::0::1::::<><>::res://scripts/enemy.gd
 game_level.tscn::PackedScene::5338715867505968681::1722824927::0::1::::<><>::res://scripts/game_level.gd<>uid://u6xvppqiu8k0::::res://scenes/terrain.tscn<>res://scripts/wave_manager.gd<>uid://ue45x42eanqf::::res://scenes/wave_spot.tscn<>uid://c4psrm47wqwgk::::res://scenes/interface.tscn<>res://scripts/SpawnPlayer.gd
 hammer.tscn::PackedScene::5831364477198669189::1722812631::0::1::::<><>::res://scripts/hammer.gd<>uid://cqxd7268pwsk2::::res://guns/hammer.png<>uid://bekpe126enxf::::res://player/mao_banana_guy.png
-interface.tscn::PackedScene::6840407440129734734::1722824806::0::1::::<><>::uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf<>res://scripts/interface.gd<>uid://ce8gkkbxmb8jx::::res://icons/coração_cheiio.png<>uid://mq8cf7s7vt8i::::res://icons/moeda.png<>uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff
+interface.tscn::PackedScene::6840407440129734734::1722825666::0::1::::<><>::uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf<>res://scripts/interface.gd<>uid://ce8gkkbxmb8jx::::res://icons/coração_cheiio.png<>uid://mq8cf7s7vt8i::::res://icons/moeda.png<>uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff
 long_sword.tscn::PackedScene::6732609150723534856::1722812631::0::1::::<><>::res://scripts/long_sword.gd<>uid://dcm3nu7qoyc50::::res://guns/long_sword.png<>uid://bekpe126enxf::::res://player/mao_banana_guy.png
 main_menu.tscn::PackedScene::654638596228770260::1722823642::0::1::::<><>::uid://cgpcws60yhnxm::::res://background_menu/menu_background.png<>res://scripts/main_menu.gd<>uid://ydeqyjqccn1q::::res://Assets (Fonte)/TrueType (.ttf)/Kaph-Regular.ttf
 pimentao.tscn::PackedScene::3934034833263415282::1722812631::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://ppl33rfsdpoc::::res://enemy/pimentao_walk_costas.png<>uid://b3fnrbtmacuer::::res://enemy/pimentao_walk_frente.png<>uid://uuitrr3cggo7::::res://enemy/pimentao_walk_lado.png
@@ -130,7 +130,7 @@ terrain.tscn::PackedScene::1469207387402932689::1722812631::0::1::::<><>::uid://
 toggle_volume.tscn::PackedScene::8946212364964868395::1722812631::0::1::::<><>::uid://bvw6skuubm440::::res://icons/audio_on.png<>res://scripts/toggle_volume.gd<>uid://dy6cyh88yvq61::::res://icons/som_on.png
 wave_spot.tscn::PackedScene::1413850004452759865::1722812631::0::1::::<><>::
 weapon_template.tscn::PackedScene::8441741541444392997::1722812631::0::1::::<><>::uid://ttev25bb0r64::::res://guns/armas_spritesheet.png<>res://scripts/weapon_template.gd
-::res://scripts/::1722824927
+::res://scripts/::1722825077
 after_game.gd::GDScript::-1::1722824486::0::1::::AfterGame<>Control<>::
 arrow.gd::GDScript::-1::1722824486::0::1::::Projectile<>Area2D<>::
 ax.gd::GDScript::-1::1722824486::0::1::::Ax<>Node2D<>::
@@ -154,7 +154,7 @@ spear.gd::GDScript::-1::1722824486::0::1::::Spear<>Node2D<>::
 toggle_volume.gd::GDScript::-1::1722824486::0::1::::ToggleVolume<>CanvasLayer<>::
 wave_manager.gd::GDScript::-1::1722824486::0::1::::WaveManager<>Node2D<>::
 weapon_template.gd::GDScript::-1::1722824486::0::1::::WeaponTemplate<>Node2D<>::
-::res://tile/::1722812631
+::res://tile/::1722825076
 tileset_do_terreno.png::CompressedTexture2D::6670341122869630561::1722812631::1722812631::1::::<><>::
-::res://video/::1722824502
+::res://video/::1722825076
 Captura de tela 2024-08-01 121410.png::CompressedTexture2D::5388998381564733064::1722812631::1722824502::1::::<><>::
