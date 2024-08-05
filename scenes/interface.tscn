@@ -2,7 +2,6 @@
 
 [ext_resource type="FontFile" uid="uid://bw7i65hi8ws7f" path="res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf" id="1_4ttkv"]
 [ext_resource type="Script" path="res://scripts/interface.gd" id="1_scmrk"]
-[ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="2_2m3em"]
 [ext_resource type="Texture2D" uid="uid://mq8cf7s7vt8i" path="res://icons/moeda.png" id="3_84b5r"]
 [ext_resource type="FontFile" uid="uid://bmyq1cjim3bb6" path="res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff" id="4_onxeu"]
 [ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="5_veh3d"]
@@ -63,7 +62,6 @@ grow_horizontal = 0
 
 [node name="Heart1" type="TextureRect" parent="HeartsContainer"]
 layout_mode = 2
-<<<<<<< HEAD
 texture = ExtResource("5_veh3d")
 
 [node name="Heart2" type="TextureRect" parent="HeartsContainer"]
@@ -73,17 +71,6 @@ texture = ExtResource("5_veh3d")
 [node name="Heart3" type="TextureRect" parent="HeartsContainer"]
 layout_mode = 2
 texture = ExtResource("5_veh3d")
-=======
-texture = ExtResource("2_2m3em")
-
-[node name="Heart2" type="TextureRect" parent="HeartsContainer"]
-layout_mode = 2
-texture = ExtResource("2_2m3em")
-
-[node name="Heart3" type="TextureRect" parent="HeartsContainer"]
-layout_mode = 2
-texture = ExtResource("2_2m3em")
->>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 
 [node name="Wave_And_Time" type="Label" parent="."]
 anchors_preset = 5
@@ -502,15 +489,9 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = 241.0
 offset_top = -29.0
 offset_right = 329.0
-=======
-offset_left = 169.0
-offset_top = -29.0
-offset_right = 257.0
->>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 offset_bottom = -2.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -531,17 +512,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-<<<<<<< HEAD
 offset_left = -273.0
 offset_top = -29.0
 offset_right = -185.0
 offset_bottom = -2.0
-=======
-offset_left = -289.0
-offset_top = -28.0
-offset_right = -201.0
-offset_bottom = -1.0
->>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
