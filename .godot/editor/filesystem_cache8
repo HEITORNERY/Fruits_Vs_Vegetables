@@ -1,11 +1,6 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-<<<<<<< HEAD
 ::res://::1722824955
 export_presets.cfg::TextFile::-1::1722824486::0::1::::<><>::
-=======
-::res://::1722815254
-export_presets.cfg::TextFile::-1::1722812631::0::1::::<><>::
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7
 icon.svg::CompressedTexture2D::2202581799061448628::1722812631::1722813725::1::::<><>::
 README.md::TextFile::-1::1722812631::0::1::::<><>::
 ::res://Assets (Fonte)/::1722812631
@@ -58,17 +53,10 @@ pepino_parado.png::CompressedTexture2D::804454025288206692::1722812631::17228126
 pimentao_walk_costas.png::CompressedTexture2D::1084517707197996594::1722812631::1722812631::1::::<><>::
 pimentao_walk_frente.png::CompressedTexture2D::4362849956150614969::1722812631::1722812631::1::::<><>::
 pimentao_walk_lado.png::CompressedTexture2D::1445585014301903268::1722812631::1722812631::1::::<><>::
-<<<<<<< HEAD
 ::res://export/::1722824957
 index.apple-touch-icon.png::CompressedTexture2D::2053949483586854040::1722824948::1722824962::1::::<><>::
 index.icon.png::CompressedTexture2D::2399623801652238690::1722824948::1722824962::1::::<><>::
 index.png::CompressedTexture2D::1955087817465545987::1722824948::1722824962::1::::<><>::
-=======
-::res://export/::1722815260
-index.apple-touch-icon.png::CompressedTexture2D::1404609816213914595::1722815253::1722815326::1::::<><>::
-index.icon.png::CompressedTexture2D::2126332041170138834::1722815253::1722815326::1::::<><>::
-index.png::CompressedTexture2D::9044019327910885414::1722815253::1722815326::1::::<><>::
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7
 ::res://guns/::1722812631
 arco.png::CompressedTexture2D::934861207760315144::1722812631::1722812631::1::::<><>::
 arco_e_flecha.png::CompressedTexture2D::5322103494351509492::1722812631::1722812631::1::::<><>::
@@ -113,11 +101,7 @@ orange_walk_trás.png::CompressedTexture2D::3241290331167612531::1722812631::172
 player_1.png::CompressedTexture2D::3327817176566370389::1722812631::1722812631::1::::<><>::
 player_2.png::CompressedTexture2D::5068975536930134475::1722812631::1722812631::1::::<><>::
 player_3.png::CompressedTexture2D::60579854968044501::1722812631::1722812631::1::::<><>::
-<<<<<<< HEAD
 ::res://scenes/::1722824927
-=======
-::res://scenes/::1722815159
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7
 abobora.tscn::PackedScene::4881681297756235742::1722812631::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://cl36cqu51d7mp::::res://enemy/abobora_dash.png<>uid://cxajngqcoaiv7::::res://enemy/abobora_walk_costas.png<>uid://be1u1m1pooxu1::::res://enemy/abobora_walk_frente.png<>uid://4xryqmdvw5v6::::res://enemy/abobora_walk_lado.png
 after_game.tscn::PackedScene::2384120569348860235::1722812631::0::1::::<><>::res://scripts/after_game.gd<>uid://cgpcws60yhnxm::::res://background_menu/menu_background.png<>uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf
 arrow.tscn::PackedScene::7879723810561935969::1722812631::0::1::::<><>::res://scripts/arrow.gd<>uid://cu1143svustor::::res://guns/flecha.png
@@ -129,7 +113,6 @@ coin.tscn::PackedScene::8206254982398053294::1722812631::0::1::::<><>::uid://mq8
 diamond.tscn::PackedScene::4329104310276629058::1722812631::0::1::::<><>::uid://do6f25vklsr6m::::res://scenes/coin.tscn<>uid://v6dxnidsct2e::::res://icons/diamante.png
 enemy_pepino.tscn::PackedScene::7655417865943073467::1722812631::0::1::::<><>::uid://co1ljlqqfj4ux::::res://enemy/pepino_andando_de_costas.png<>uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://bidkhuoypom0d::::res://enemy/pepino_andando_de_frente.png<>uid://stuqwt10ppol::::res://enemy/pepino_andando_de_lado-sheet.png
 enemy_template.tscn::PackedScene::128580866373265014::1722812631::0::1::::<><>::res://scripts/enemy.gd
-<<<<<<< HEAD
 game_level.tscn::PackedScene::5338715867505968681::1722824927::0::1::::<><>::res://scripts/game_level.gd<>uid://u6xvppqiu8k0::::res://scenes/terrain.tscn<>res://scripts/wave_manager.gd<>uid://ue45x42eanqf::::res://scenes/wave_spot.tscn<>uid://c4psrm47wqwgk::::res://scenes/interface.tscn<>res://scripts/SpawnPlayer.gd
 hammer.tscn::PackedScene::5831364477198669189::1722812631::0::1::::<><>::res://scripts/hammer.gd<>uid://cqxd7268pwsk2::::res://guns/hammer.png<>uid://bekpe126enxf::::res://player/mao_banana_guy.png
 interface.tscn::PackedScene::6840407440129734734::1722824806::0::1::::<><>::uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf<>res://scripts/interface.gd<>uid://ce8gkkbxmb8jx::::res://icons/coração_cheiio.png<>uid://mq8cf7s7vt8i::::res://icons/moeda.png<>uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff
@@ -137,15 +120,6 @@ long_sword.tscn::PackedScene::6732609150723534856::1722812631::0::1::::<><>::res
 main_menu.tscn::PackedScene::654638596228770260::1722823642::0::1::::<><>::uid://cgpcws60yhnxm::::res://background_menu/menu_background.png<>res://scripts/main_menu.gd<>uid://ydeqyjqccn1q::::res://Assets (Fonte)/TrueType (.ttf)/Kaph-Regular.ttf
 pimentao.tscn::PackedScene::3934034833263415282::1722812631::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://ppl33rfsdpoc::::res://enemy/pimentao_walk_costas.png<>uid://b3fnrbtmacuer::::res://enemy/pimentao_walk_frente.png<>uid://uuitrr3cggo7::::res://enemy/pimentao_walk_lado.png
 player.tscn::PackedScene::8928918787645182383::1722824549::0::1::::<><>::res://scripts/player.gd<>uid://d3mep17nnjb6o::::res://player/orange_idle_back.png<>uid://rmqnbgp21bfu::::res://player/orange_idle_of_side.png<>uid://cshjsdyotvahu::::res://player/orange_idle-Sheet-sheet.png<>uid://oryufpe4a0pp::::res://player/orange_walk_frente.png<>uid://cqd5ubk5o5721::::res://player/orange_walk_lado.png<>uid://bmgdtwnn8i7f0::::res://player/orange_walk_trás.png<>uid://baynoejjle46m::::res://buttons/ui_buttons_arrow_left_NORMAL.png<>uid://dy6ym43b0qpg4::::res://buttons/ui_buttons_arrow_left_PRESSED.png<>uid://dsvqokw34y8t7::::res://buttons/ui_buttons_arrow_right_NORMAL.png<>uid://bbdxfd4cdadv5::::res://buttons/ui_buttons_arrow_right_PRESSED.png<>uid://diih7uraju7o0::::res://buttons/ui_buttons_arrow_up_NORMAL.png<>uid://l8q63gkki6wt::::res://buttons/ui_buttons_arrow_up_PRESSED.png<>uid://fv4iomnt4ht1::::res://buttons/ui_buttons_arrow_down_NORMAL-export.png<>uid://d1uppvnag63ij::::res://buttons/ui_buttons_arrow_down_PRESSED-export.png<>res://scripts/Camera.gd<>uid://vseicwmd8bp7::::res://scenes/big_sword.tscn
-=======
-game_level.tscn::PackedScene::5338715867505968681::1722814782::0::1::::<><>::uid://u6xvppqiu8k0::::res://scenes/terrain.tscn<>res://scripts/game_level.gd<>res://scripts/wave_manager.gd<>uid://ue45x42eanqf::::res://scenes/wave_spot.tscn<>uid://c4psrm47wqwgk::::res://scenes/interface.tscn<>res://scripts/SpawnPlayer.gd
-hammer.tscn::PackedScene::5831364477198669189::1722812631::0::1::::<><>::res://scripts/hammer.gd<>uid://cqxd7268pwsk2::::res://guns/hammer.png<>uid://bekpe126enxf::::res://player/mao_banana_guy.png
-interface.tscn::PackedScene::6840407440129734734::1722814782::0::1::::<><>::uid://bw7i65hi8ws7f::::res://Assets (Fonte)/OpenType (.otf)/Kaph-Regular.otf<>res://scripts/interface.gd<>uid://mq8cf7s7vt8i::::res://icons/moeda.png<>uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff<>uid://ce8gkkbxmb8jx::::res://icons/coração_cheiio.png
-long_sword.tscn::PackedScene::6732609150723534856::1722812631::0::1::::<><>::res://scripts/long_sword.gd<>uid://dcm3nu7qoyc50::::res://guns/long_sword.png<>uid://bekpe126enxf::::res://player/mao_banana_guy.png
-main_menu.tscn::PackedScene::654638596228770260::1722814782::0::1::::<><>::uid://cgpcws60yhnxm::::res://background_menu/menu_background.png<>res://scripts/main_menu.gd<>uid://ydeqyjqccn1q::::res://Assets (Fonte)/TrueType (.ttf)/Kaph-Regular.ttf
-pimentao.tscn::PackedScene::3934034833263415282::1722812631::0::1::::<><>::uid://b3jycsrfrj4a::::res://scenes/enemy_template.tscn<>uid://ppl33rfsdpoc::::res://enemy/pimentao_walk_costas.png<>uid://b3fnrbtmacuer::::res://enemy/pimentao_walk_frente.png<>uid://uuitrr3cggo7::::res://enemy/pimentao_walk_lado.png
-player.tscn::PackedScene::8928918787645182383::1722815159::0::1::::<><>::res://scripts/player.gd<>uid://d3mep17nnjb6o::::res://player/orange_idle_back.png<>uid://rmqnbgp21bfu::::res://player/orange_idle_of_side.png<>uid://cshjsdyotvahu::::res://player/orange_idle-Sheet-sheet.png<>uid://oryufpe4a0pp::::res://player/orange_walk_frente.png<>uid://cqd5ubk5o5721::::res://player/orange_walk_lado.png<>uid://bmgdtwnn8i7f0::::res://player/orange_walk_trás.png<>uid://baynoejjle46m::::res://buttons/ui_buttons_arrow_left_NORMAL.png<>uid://dy6ym43b0qpg4::::res://buttons/ui_buttons_arrow_left_PRESSED.png<>uid://dsvqokw34y8t7::::res://buttons/ui_buttons_arrow_right_NORMAL.png<>uid://bbdxfd4cdadv5::::res://buttons/ui_buttons_arrow_right_PRESSED.png<>uid://diih7uraju7o0::::res://buttons/ui_buttons_arrow_up_NORMAL.png<>uid://l8q63gkki6wt::::res://buttons/ui_buttons_arrow_up_PRESSED.png<>uid://fv4iomnt4ht1::::res://buttons/ui_buttons_arrow_down_NORMAL-export.png<>uid://d1uppvnag63ij::::res://buttons/ui_buttons_arrow_down_PRESSED-export.png<>res://scripts/Camera.gd<>uid://vseicwmd8bp7::::res://scenes/big_sword.tscn
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7
 player_2.tscn::PackedScene::4615089618121977567::1722812631::0::1::::<><>::uid://d0hh8uap436bb::::res://scenes/player.tscn<>uid://dxulqnvv6uexl::::res://player/banana_guy_parado_de_costas.png<>uid://bf46tmctljcxg::::res://player/banana_guy_parado_de_lado.png<>uid://dq4vmrbye4hbs::::res://player/banana_guy_parado_de_frente.png<>uid://dhixifof3566b::::res://player/banana_guy_andando_de_costas.png<>uid://bhqf4ghov6rov::::res://player/banana_guy_andando_de_frente.png<>uid://dqy88g82r514n::::res://player/banana_guy_andando_de_lado.png
 player_3.tscn::PackedScene::9012922136867034182::1722812631::0::1::::<><>::uid://d0hh8uap436bb::::res://scenes/player.tscn<>uid://cykeaejidg1fx::::res://player/maca_andando_de_costas.png<>uid://dnw4uqnptguh5::::res://player/maca_parado_de_lado.png<>uid://clxaobif5p37d::::res://player/maca_parado_de_frente.png<>uid://qbjfnvoafnew::::res://player/maca_anadando_de_frente.png<>uid://d26lrj6pdu58o::::res://player/maca_anadando_de_lado.png
 popup.tscn::PackedScene::7945219546471997594::1722812631::0::1::::<><>::uid://bmyq1cjim3bb6::::res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff<>res://scripts/popup.gd
@@ -156,7 +130,6 @@ terrain.tscn::PackedScene::1469207387402932689::1722812631::0::1::::<><>::uid://
 toggle_volume.tscn::PackedScene::8946212364964868395::1722812631::0::1::::<><>::uid://bvw6skuubm440::::res://icons/audio_on.png<>res://scripts/toggle_volume.gd<>uid://dy6cyh88yvq61::::res://icons/som_on.png
 wave_spot.tscn::PackedScene::1413850004452759865::1722812631::0::1::::<><>::
 weapon_template.tscn::PackedScene::8441741541444392997::1722812631::0::1::::<><>::uid://ttev25bb0r64::::res://guns/armas_spritesheet.png<>res://scripts/weapon_template.gd
-<<<<<<< HEAD
 ::res://scripts/::1722824927
 after_game.gd::GDScript::-1::1722824486::0::1::::AfterGame<>Control<>::
 arrow.gd::GDScript::-1::1722824486::0::1::::Projectile<>Area2D<>::
@@ -185,33 +158,3 @@ weapon_template.gd::GDScript::-1::1722824486::0::1::::WeaponTemplate<>Node2D<>::
 tileset_do_terreno.png::CompressedTexture2D::6670341122869630561::1722812631::1722812631::1::::<><>::
 ::res://video/::1722824502
 Captura de tela 2024-08-01 121410.png::CompressedTexture2D::5388998381564733064::1722812631::1722824502::1::::<><>::
-=======
-::res://scripts/::1722814774
-after_game.gd::GDScript::-1::1722812631::0::1::::AfterGame<>Control<>::
-arrow.gd::GDScript::-1::1722812631::0::1::::Projectile<>Area2D<>::
-ax.gd::GDScript::-1::1722812631::0::1::::Ax<>Node2D<>::
-bgm.gd::GDScript::-1::1722812631::0::1::::Bgm<>AudioStreamPlayer<>::
-Bow.gd::GDScript::-1::1722812631::0::1::::Bow<>Node2D<>::
-Camera.gd::GDScript::-1::1722814618::0::1::::PlayerCamera<>Camera2D<>::
-coin.gd::GDScript::-1::1722812631::0::1::::ItensDropados<>Area2D<>::
-enemy.gd::GDScript::-1::1722812631::0::1::::Enemy<>CharacterBody2D<>::
-global.gd::GDScript::-1::1722812631::0::1::::Global<>Node<>::
-hammer.gd::GDScript::-1::1722812631::0::1::::Hammer<>Node2D<>::
-interface.gd::GDScript::-1::1722812631::0::1::::Interface<>CanvasLayer<>::
-long_sword.gd::GDScript::-1::1722812631::0::1::::LongSword<>Node2D<>::
-main_menu.gd::GDScript::-1::1722812631::0::1::::<>Control<>::
-player.gd::GDScript::-1::1722812631::0::1::::Player<>CharacterBody2D<>::
-popup.gd::GDScript::-1::1722812631::0::1::::PopupText<>Label<>::
-game_level.gd::GDScript::-1::1722814774::0::1::::<>Node2D<>::
-select_player.gd::GDScript::-1::1722812631::0::1::::<>Control<>::
-sfx.gd::GDScript::-1::1722812631::0::1::::Sfx<>AudioStreamPlayer<>::
-SpawnPlayer.gd::GDScript::-1::1722812631::0::1::::<>Node2D<>::
-spear.gd::GDScript::-1::1722812631::0::1::::Spear<>Node2D<>::
-toggle_volume.gd::GDScript::-1::1722812631::0::1::::ToggleVolume<>CanvasLayer<>::
-wave_manager.gd::GDScript::-1::1722814242::0::1::::WaveManager<>Node2D<>::
-weapon_template.gd::GDScript::-1::1722812631::0::1::::WeaponTemplate<>Node2D<>::
-::res://tile/::1722812631
-tileset_do_terreno.png::CompressedTexture2D::6670341122869630561::1722812631::1722812631::1::::<><>::
-::res://video/::1722812631
-Captura de tela 2024-08-01 121410.png::CompressedTexture2D::2691507716363004789::1722812631::1722812631::1::::<><>::
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7

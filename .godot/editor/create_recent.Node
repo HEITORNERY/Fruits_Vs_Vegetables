@@ -1,10 +1,8 @@
 TextureRect
 HBoxContainer
-Control
-CanvasLayer
-SubViewport
 TextureButton
 VBoxContainer
+CanvasLayer
 Button
 AudioStreamPlayer
 Label
@@ -12,3 +10,5 @@ GridContainer
 ColorRect
 MarginContainer
 Marker2D
+Node2D
+Timer

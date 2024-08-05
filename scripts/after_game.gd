@@ -9,7 +9,6 @@ func _ready():
 	$GridContainer/DinheiroGasto.text = "Dinheiro Gasto: " + str(global.money_gasto)
 func _on_menu_pressed():
 	bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/button_click.ogg")
-	global.money = 0
 	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 func _on_quit_pressed():
 	bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/button_cancel.ogg")

@@ -9,7 +9,6 @@ res://scenes/coin.tscn::0e3f4549dfca6c038fb2dd112d2a8750::1722812631::res://.god
 res://scenes/diamond.tscn::e3202b354e8de75ba548e29d96dbe423::1722812631::res://.godot/exported/133200997/export-33109ae8b1da10d168f9074c03dd3f9f-diamond.scn
 res://scenes/enemy_pepino.tscn::7eda5b75d5a7342cda180a0d6ea36679::1722812631::res://.godot/exported/133200997/export-8bc28fb8f931d3a24ee88e376324203e-enemy_pepino.scn
 res://scenes/enemy_template.tscn::831b7cccdcb308f1acc2c85dc8720948::1722812631::res://.godot/exported/133200997/export-0042a31e4dfbc043967da6033e8626c5-enemy_template.scn
-<<<<<<< HEAD
 res://scenes/game_level.tscn::eb216677d54879c45fbc1298fcf86812::1722824927::res://.godot/exported/133200997/export-0f707afc6b6fd43fa5fb1a454f13e559-game_level.scn
 res://scenes/hammer.tscn::1c66778ed986caaf1e6262bca013ea91::1722812631::res://.godot/exported/133200997/export-490a1213b79b5180cda5a36dd11e6761-hammer.scn
 res://scenes/interface.tscn::b16026eec711652c7a4415fc412ded4c::1722824806::res://.godot/exported/133200997/export-54363c46c26e42648f2d0284e954c923-interface.scn
@@ -17,15 +16,6 @@ res://scenes/long_sword.tscn::d87517568877921fdc7535c2642f572a::1722812631::res:
 res://scenes/main_menu.tscn::ebf312993fb022852a2f2c01dad08bf5::1722823642::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
 res://scenes/pimentao.tscn::ab930ab5e0c7b6bedbbd2278f0279b51::1722812631::res://.godot/exported/133200997/export-d7b408a83c03e28fd57f85c9082f8283-pimentao.scn
 res://scenes/player.tscn::040f3920fd262fe6ec3d36dd73b31319::1722824549::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
-=======
-res://scenes/game_level.tscn::4661a9244a067989f5a6d7da31fcefe2::1722814782::res://.godot/exported/133200997/export-0f707afc6b6fd43fa5fb1a454f13e559-game_level.scn
-res://scenes/hammer.tscn::1c66778ed986caaf1e6262bca013ea91::1722812631::res://.godot/exported/133200997/export-490a1213b79b5180cda5a36dd11e6761-hammer.scn
-res://scenes/interface.tscn::f62083a0f8beaf1abe4d0e8ba8a7e1a4::1722814782::res://.godot/exported/133200997/export-54363c46c26e42648f2d0284e954c923-interface.scn
-res://scenes/long_sword.tscn::d87517568877921fdc7535c2642f572a::1722812631::res://.godot/exported/133200997/export-cd53f09d2ff15eed87a6847442f67956-long_sword.scn
-res://scenes/main_menu.tscn::ebf312993fb022852a2f2c01dad08bf5::1722814782::res://.godot/exported/133200997/export-ea5c6ad4629af728dc514cefde332394-main_menu.scn
-res://scenes/pimentao.tscn::ab930ab5e0c7b6bedbbd2278f0279b51::1722812631::res://.godot/exported/133200997/export-d7b408a83c03e28fd57f85c9082f8283-pimentao.scn
-res://scenes/player.tscn::1b709cf2a81583446c2c02f05eaaad31::1722815159::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
->>>>>>> 4d219837a32a46ede92435089fb0782aee9b82d7
 res://scenes/player_2.tscn::95424f4e1276f46dca434c50c71cf5eb::1722812631::res://.godot/exported/133200997/export-6b3fe710cf4b159ca1c17d619b8227b0-player_2.scn
 res://scenes/player_3.tscn::85628f1917bb3557fd2e107047e7b44e::1722812631::res://.godot/exported/133200997/export-cc6cf598a3fe7c54e3ba4203384b608e-player_3.scn
 res://scenes/popup.tscn::b0c5e15b0086739aaa086855bf1d62fb::1722812631::res://.godot/exported/133200997/export-25bf9af5f1e899b8e67c94599c1aa55f-popup.scn

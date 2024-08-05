@@ -8,13 +8,6 @@ var max_health: int
 func _ready():
 	global.player = self
 	max_health = health
-	global.money = 0
-	global.money_gasto = 0
-	global.money_spend = 0
-	global.damage_maked = 0
-	global.damage_suffer = 0
-	global.enemies_killed = 0
-	global.time_alive = 0
 func move():
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = direction * SPEED
@@ -44,7 +37,7 @@ func _physics_process(delta):
 func update_health(_type: String, _value: int) -> void:
 	match _type:
 		"damage":
-			health -= _value
+			health -= sign(_value)
 			global.damage_suffer += _value
 			if health <= 0:
 				bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/game_over.ogg")
