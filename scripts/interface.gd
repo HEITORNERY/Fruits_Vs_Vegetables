@@ -105,7 +105,11 @@ func _process(_delta):
 		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
 		$HeartsContainer/Heart2.texture = load("res://icons/coração_vazio.png")
 		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+<<<<<<< HEAD
 	elif global.player.health <= 5 and global.player.health > 0:
+=======
+	elif global.player.health <= 30 and global.player.health > 25:
+>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
 		$HeartsContainer/Heart2.texture = load("res://icons/coração_vazio.png")
 		$HeartsContainer/Heart3.texture = load("res://icons/coração_pela_metade.png")

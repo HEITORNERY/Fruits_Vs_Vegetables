@@ -23,9 +23,13 @@ togglevolume="*res://scenes/toggle_volume.tscn"
 
 [display]
 
+<<<<<<< HEAD
 window/size/viewport_width=740
+=======
+window/size/viewport_width=720
+>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 window/size/viewport_height=360
-window/stretch/mode="viewport"
+window/stretch/mode="canvas_items"
 
 [filesystem]
 

@@ -2,8 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://cpobj4rxkqs64"
 path="res://.godot/imported/Captura de tela 2024-08-01 121410.png-b902ee2d873eddaf37e8196af22c1239.ctex"
+=======
+<<<<<<<< HEAD:export/index.apple-touch-icon.png.import
+uid="uid://d1bk00ct5rfsn"
+path="res://.godot/imported/index.apple-touch-icon.png-2786902287ee3c081d87ddba9fd253fe.ctex"
+========
+uid="uid://ci1qasq64a0hg"
+path="res://.godot/imported/Captura de tela 2024-08-01 121410.png-b902ee2d873eddaf37e8196af22c1239.ctex"
+>>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721:video/Captura de tela 2024-08-01 121410.png.import
+>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 metadata={
 "vram_texture": false
 }

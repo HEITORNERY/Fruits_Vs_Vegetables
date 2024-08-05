@@ -1,6 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://cicd4ud557rhx"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://scripts/game_level.gd" id="1_13inf"]
+=======
+[ext_resource type="Script" path="res://scripts/game_level.gd" id="1_8doh3"]
+>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 [ext_resource type="PackedScene" uid="uid://u6xvppqiu8k0" path="res://scenes/terrain.tscn" id="1_jy4de"]
 [ext_resource type="Script" path="res://scripts/wave_manager.gd" id="3_k04oc"]
 [ext_resource type="PackedScene" uid="uid://ue45x42eanqf" path="res://scenes/wave_spot.tscn" id="3_s5ygj"]
@@ -8,7 +12,11 @@
 [ext_resource type="Script" path="res://scripts/SpawnPlayer.gd" id="5_kf223"]
 
 [node name="Game_Level" type="Node2D"]
+<<<<<<< HEAD
 script = ExtResource("1_13inf")
+=======
+script = ExtResource("1_8doh3")
+>>>>>>> a4b859ff882126635df3c9e91f3319d20924b721
 
 [node name="Terrain" parent="." instance=ExtResource("1_jy4de")]
 
