@@ -1,6 +1,2 @@
 res://scenes/interface.tscn
-res://scenes/main_menu.tscn
-res://scenes/after_game.tscn
-res://scenes/player.tscn
-res://scripts/interface.gd
-res://scripts/player.gd
+res://scripts/wave_manager.gd

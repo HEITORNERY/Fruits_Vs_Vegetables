@@ -106,10 +106,10 @@ func update_health(_value : int) -> void:
 	health -= _value
 	$AnimatedSprite2D/AnimationPlayer.play("hit")
 	spawn_text_popup(_value)
-	get_tree().call_group("player_camera", "terremoto", 2.0, 0.25)
+	get_tree().call_group("player_camera", "terremoto", 3.0, 0.1)
 	global.damage_maked += _value
 	if health <= 0:
-		get_tree().call_group("player_camera", "terremoto", 5.0, 0.35)
+		get_tree().call_group("player_camera", "terremoto", 5.0, 0.2)
 		spawn_coins()
 		global.enemies_killed += 1
 		queue_free()

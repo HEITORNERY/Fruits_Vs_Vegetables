@@ -90,7 +90,7 @@ func _ready():
 func _on_wave_duration_timeout():
 	clear_map()
 	current_wave += 1
-	if current_wave >= wave_dict.size():
+	if current_wave >= wave_dict.size() + 1:
 		get_tree().change_scene_to_file("res://scenes/after_game.tscn")
 		return
 	bgm.spawn_sfx("res://Assets (MUSICAS)/musics/sfx/wave_success.ogg")

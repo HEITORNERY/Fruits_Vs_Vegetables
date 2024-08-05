@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2xbyleaw80hi"]
+[gd_scene load_steps=4 format=3 uid="uid://b2xbyleaw80hi"]
 
 [ext_resource type="PackedScene" uid="uid://do6f25vklsr6m" path="res://scenes/coin.tscn" id="1_ie50f"]
 [ext_resource type="Texture2D" uid="uid://v6dxnidsct2e" path="res://icons/diamante.png" id="2_hb8th"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cuvly"]
+size = Vector2(20, 23)
 
 [node name="Diamond" instance=ExtResource("1_ie50f")]
 valor_do_item = Array[int]([5, 15])
@@ -11,4 +14,13 @@ sfx_path = "res://Assets (MUSICAS)/musics/sfx/gold_2.ogg"
 texture = ExtResource("2_hb8th")
 
 [node name="CollisionShape2D" parent="." index="1"]
+visible = false
 position = Vector2(0, -5)
+
+[node name="HealthArea" type="Area2D" parent="." index="2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HealthArea" index="0"]
+position = Vector2(1, -3.5)
+shape = SubResource("RectangleShape2D_cuvly")
+
+[connection signal="body_entered" from="HealthArea" to="." method="_on_health_area_body_entered"]

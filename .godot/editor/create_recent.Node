@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 TextureRect
 HBoxContainer
 TextureButton
@@ -11,4 +13,3 @@ ColorRect
 MarginContainer
 Marker2D
 Node2D
-Timer

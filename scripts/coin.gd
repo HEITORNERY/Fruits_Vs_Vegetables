@@ -8,3 +8,7 @@ func _on_body_entered(body):
 		global.increase_money(value)
 		bgm.spawn_sfx(sfx_path)
 		queue_free()
+func _on_health_area_body_entered(body):
+	if body is Player:
+		body.update_health("heal", 5)
+		

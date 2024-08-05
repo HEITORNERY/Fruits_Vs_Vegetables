@@ -84,3 +84,28 @@ func load_cards():
 		slot.get_node("VBoxContainer/ButtonContainer/Button").text = str(global.weapons_list[weapon][nível_da_arma]["cost"]) + " moedas"
 		slot.show()
 		i += 1 
+func _process(_delta):
+	if global.player.health <= 30 and global.player.health > 25:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_cheiio.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_cheiio.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 25 and global.player.health > 20:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_pela_metade.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_cheiio.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 20 and global.player.health > 15:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_cheiio.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 15 and global.player.health > 10:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_pela_metade.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 10 and global.player.health > 5:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_cheiio.png")
+	elif global.player.health <= 5 and global.player.health > 0:
+		$HeartsContainer/Heart1.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart2.texture = load("res://icons/coração_vazio.png")
+		$HeartsContainer/Heart3.texture = load("res://icons/coração_pela_metade.png")
