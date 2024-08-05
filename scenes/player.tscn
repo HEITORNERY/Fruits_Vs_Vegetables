@@ -816,7 +816,7 @@ shape = SubResource("CircleShape2D_ya0r3")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="left" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(538, 294)
+position = Vector2(10, 294)
 scale = Vector2(1.65625, 1.625)
 texture_normal = ExtResource("7_713o8")
 texture_pressed = ExtResource("8_l8t1h")
@@ -824,7 +824,7 @@ action = "ui_left"
 visibility_mode = 1
 
 [node name="right" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(606, 294)
+position = Vector2(78.9999, 291)
 scale = Vector2(1.53125, 1.625)
 texture_normal = ExtResource("9_od25r")
 texture_pressed = ExtResource("10_tpvw8")
@@ -832,7 +832,7 @@ action = "ui_right"
 visibility_mode = 1
 
 [node name="Up" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(15, 294)
+position = Vector2(659, 234)
 scale = Vector2(1.65625, 1.65625)
 texture_normal = ExtResource("11_nap62")
 texture_pressed = ExtResource("12_8tn3r")
@@ -840,7 +840,7 @@ action = "ui_up"
 visibility_mode = 1
 
 [node name="Down" type="TouchScreenButton" parent="CanvasLayer"]
-position = Vector2(92, 297)
+position = Vector2(663, 297)
 scale = Vector2(1.46875, 1.5)
 texture_normal = ExtResource("13_0aob3")
 texture_pressed = ExtResource("14_7rnft")

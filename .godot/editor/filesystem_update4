@@ -1,6 +1,5 @@
-res://scenes/interface.tscn
-res://scenes/main_menu.tscn
-res://scenes/after_game.tscn
 res://scenes/player.tscn
+res://scenes/interface.tscn
 res://scripts/interface.gd
-res://scripts/player.gd
+res://scenes/game_level.tscn
+res://scripts/game_level.gd
