@@ -14,6 +14,10 @@ func terremoto(força_do_terremoto: float, tempo_do_terremoto: float) -> void:
 		duration -= get_process_delta_time()
 		if is_instance_valid(player):
 			await get_tree().process_frame  # Espera o próximo frame de física
+		else:
+			offset = Vector2.ZERO
+			strength = 0
+			duration = 0
 	offset = Vector2.ZERO
 	strength = 0
 	duration = 0

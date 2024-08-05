@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="2_2m3em"]
 [ext_resource type="Texture2D" uid="uid://mq8cf7s7vt8i" path="res://icons/moeda.png" id="3_84b5r"]
 [ext_resource type="FontFile" uid="uid://bmyq1cjim3bb6" path="res://Assets (Fonte)/Web Open Font Format (.woff)/Kaph-Regular.woff" id="4_onxeu"]
+[ext_resource type="Texture2D" uid="uid://ce8gkkbxmb8jx" path="res://icons/coração_cheiio.png" id="5_7tklj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_nlx1o"]
 font = ExtResource("1_4ttkv")
@@ -489,10 +490,10 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 433.0
-offset_top = -345.0
-offset_right = 521.0
-offset_bottom = -318.0
+offset_left = 152.0
+offset_top = -30.0
+offset_right = 240.0
+offset_bottom = -3.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0.913725, 0.929412, 0, 1)
@@ -512,10 +513,10 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -99.0
-offset_top = -343.0
-offset_right = -11.0
-offset_bottom = -316.0
+offset_left = -281.0
+offset_top = -30.0
+offset_right = -193.0
+offset_bottom = -3.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -544,3 +545,23 @@ expand_mode = 1
 layout_mode = 2
 text = "0"
 label_settings = SubResource("LabelSettings_t74he")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="Hearts1" type="TextureRect" parent="HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("5_7tklj")
+
+[node name="Hearts2" type="TextureRect" parent="HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("5_7tklj")
+
+[node name="Hearts3" type="TextureRect" parent="HBoxContainer2"]
+layout_mode = 2
+texture = ExtResource("5_7tklj")
